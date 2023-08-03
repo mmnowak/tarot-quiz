@@ -36,7 +36,7 @@ let questions = [
         choice4: 'Positivity, fun, warmth, success, vitality',
         answer: 2
     },
-    
+
     {
         question: '<img src="assets/images/tarot/empress.jpg" alt="The Empress"></img>',
         choice1: "Soul-searching, introspection, being alone, inner guidance",
@@ -83,7 +83,7 @@ let questions = [
     },
 
     {
-        question: '<img src="assets/images/tarot/strength.jpg" alt="Strength"></img>',
+        question: '<img src="assets/images/tarot/strenghth.jpg" alt="Strength"></img>',
         choice1: "Completion, integration, accomplishment, travel",
         choice2: "Courage, persuasion, influence, compassion",
         choice3: "Control, willpower, success, action, determination",
@@ -223,6 +223,11 @@ let questions = [
     currentQuestion = availableQuestions[questionIndex]
     console.log(currentQuestion);
     question.innerHTML = currentQuestion.question;
+    choices.forEach((choice) => {
+        const option = choice.dataset['option'];
+        choice.innerText = currentQuestion['choice' + option]
+
+    } )
  }
 
  startGame();

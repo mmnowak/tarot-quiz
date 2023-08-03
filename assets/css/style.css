@@ -7,3 +7,9 @@
     padding: 0.2rem 0.5rem;
     background-color: blue;
 }
+
+#card-question img {
+    height: 35%;
+    width: 35%;
+    border: solid 3px black;
+}
