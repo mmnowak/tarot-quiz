@@ -218,6 +218,8 @@ let questions = [
  }
 
  function getNewCard() {
+    if (availableQuestions.length === 0) {return window.location.assign('/end.html')};
+
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex]
@@ -226,9 +228,33 @@ let questions = [
     choices.forEach((choice) => {
         const option = choice.dataset['option'];
         choice.innerText = currentQuestion['choice' + option]
+    });
 
-    } )
- }
+    availableQuestions.splice(questionIndex, 1);
+    acceptingAnswers = true;
+ };
+
+ choices.forEach((choice) => {
+    choice.addEventListener("click", e => {
+        if (!acceptingAnswers) return;
+
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset['option'];
+
+        const classToApply =
+      selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+
+      $(selectedChoice).addClass(classToApply);
+
+      setTimeout(() => {
+            $(selectedChoice).removeClass(classToApply);
+        getNewCard();
+    }, 1000)
+    });
+ });
+
+ 
 
  startGame();
 

@@ -13,3 +13,11 @@
     width: 35%;
     border: solid 3px black;
 }
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
