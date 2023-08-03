@@ -1,17 +1,41 @@
+/* 
+background-color: rgba(188, 148, 63, 0.7);
+ */
+
+body {
+    background-color: #1D0742;
+    height: auto;
+    background-image: url('../images/backgroundimg.jpg') !important;
+    background-repeat: repeat;
+}
+
+nav {
+    background-color: #BC943F;
+    height: 40px;
+}
+
 #game-container {
     width: 500px;
     border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
 .choice-prefix {
     padding: 0.2rem 0.5rem;
-    background-color: blue;
+    background-color: black;
+    color: #BC943F;
+    border: 2px solid #BC943F;
+}
+
+.choice-text {
+    background-color: #BC943F;
 }
 
 #card-question img {
-    height: 35%;
-    width: 35%;
+    height: 30%;
+    width: 30%;
     border: solid 3px black;
+    margin: 1.5rem;
 }
 
 .correct {
