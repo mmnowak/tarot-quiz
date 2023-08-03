@@ -6,7 +6,6 @@ const timer = document.getElementById("timer");
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
-let questionCounter = 0;
 let availableQuestions = [];
 let timerInterval;
 
@@ -211,7 +210,6 @@ let questions = [
 ];
 
  function startGame() {
-    questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
     scoreCount.innerText = 0 + '/22';
@@ -222,10 +220,8 @@ let questions = [
  function getNewCard() {
     if (availableQuestions.length === 0) {return window.location.assign('/end.html')};
 
-    questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-    currentQuestion = availableQuestions[questionIndex]
-    console.log(currentQuestion);
+    currentQuestion = availableQuestions[questionIndex];
     question.innerHTML = currentQuestion.question;
     choices.forEach((choice) => {
         const option = choice.dataset['option'];
@@ -265,7 +261,7 @@ let questions = [
     scoreCount.innerText = score + '/22';
  }
 
- // TIMER
+ // TIMER tutorial from https://daily-dev-tips.com/posts/vanilla-javascript-timer/?utm_content=cmp-true
 
  function startTimer() {
     clearInterval(timerInterval);
@@ -283,7 +279,6 @@ let questions = [
     }
  }, 1000);
  };
-
 
   startGame();
 

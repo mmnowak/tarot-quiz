@@ -22,47 +22,18 @@
     </div>
     <div class="collapse navbar-collapse" id="navigation">
         <ul class="navbar-nav justify-content-end">
-            <li class="nav-item m-2"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item m-2"><a class="nav-link active active-link" href="game.html" aria-current="true">NewGame</a></li>
+            <li class="nav-item m-2"><a class="nav-link active active-link" href="index.html" aria-current="true">Home</a></li>
+            <li class="nav-item m-2"><a class="nav-link" href="game.html">Play</a></li>
             <li class="nav-item m-2"><a class="nav-link" href="#">Practise</a></li>
         </ul></div>
     </div>
 </nav>
 
-<div class="container">
-<div class="row d-flex justify-content-center mt-5">
-    <div class="col-sm-2">
-        <div class="game-info p-2">
-            <h3>Time</h3>
-         <p id="timer">00:00</p></div>
-    </div>
-    <div class="d-flex col-sm-6 justify-content-center">
-    <div id="game-container">
-        <div id="card-question" class="d-flex justify-content-center"></div>
-        <div class="answers-container d-flex">
-            <p class="choice-prefix">A.</p>
-            <p class="choice-text w-100" data-option="1">Choice 1</p>
-        </div>
-        <div class="answers-container d-flex">
-            <p class="choice-prefix">B.</p>
-            <p class="choice-text w-100" data-option="2">Choice 2</p>
-        </div>
-        <div class="answers-container d-flex">
-            <p class="choice-prefix">C.</p>
-            <p class="choice-text w-100" data-option="3">Choice 3</p>
-        </div>
-        <div class="answers-container d-flex">
-            <p class="choice-prefix">D.</p>
-            <p class="choice-text w-100" data-option="4">Choice 4</p>
-        </div>        
-    </div></div>
-    <div class="col-sm-2">
-        <div class="game-info p-2"><h3>Score</h3>
-        <p id="score"></p>
-        </div>
-    </div>
-</div></div>
+<button onclick="showCard()">CLICK</button>
+<div class="container d-flex justify-content-center">
+    <div id="learn-card"></div>
+</div>
 
-<script src="scripts/script.js"></script>
+<script src="scripts/learn.js"></script>
 </body>
 </html>
