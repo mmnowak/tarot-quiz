@@ -85,6 +85,8 @@ body {
 .learn-card img {
     height: 400px;
     width: 232px;
+    border-radius: 5px;
+
 }
 
 .learn-card.flip {
@@ -101,8 +103,20 @@ body {
 .card-reverse {
     height: 400px;
     width: 232px;
-    background-color: blue;
+    line-height: 400px;
+    background-color: #BC943F;
     transform: rotateY(180deg);
+    border: 3px solid black;
+    text-align: center;
+    font-size: x-large;
+    padding: 5px;
+    overflow-wrap: break-word;
+}
+
+.card-reverse p {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 
