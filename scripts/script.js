@@ -261,7 +261,7 @@ let questions = [
     scoreCount.innerText = score + '/22';
  }
 
- // TIMER tutorial from https://daily-dev-tips.com/posts/vanilla-javascript-timer/?utm_content=cmp-true
+ // TIMER
 
  function startTimer() {
     clearInterval(timerInterval);

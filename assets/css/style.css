@@ -119,4 +119,18 @@ body {
     vertical-align: middle;
 }
 
+.next-button {
+    background-color: #BC943F;
+}
+
+.next-button:hover {
+    background-color: black;
+    color: #BC943F;
+}
+
+h4 {
+    color: #BC943F;
+    background-color: rgba(0, 0, 0, 0.7)
+}
+
 

@@ -22,18 +22,19 @@
     </div>
     <div class="collapse navbar-collapse" id="navigation">
         <ul class="navbar-nav justify-content-end">
-            <li class="nav-item m-2"><a class="nav-link active active-link" href="index.html" aria-current="true">Home</a></li>
+            <li class="nav-item m-2"><a class="nav-link" href="index.html" aria-current="true">Home</a></li>
             <li class="nav-item m-2"><a class="nav-link" href="game.html">Play</a></li>
-            <li class="nav-item m-2"><a class="nav-link" href="#">Practise</a></li>
+            <li class="nav-item m-2"><a class="nav-link active active-link" href="learn.html" aria-current="true">Learn</a></li>
         </ul></div>
     </div>
 </nav>
 
-<div class="d-flex justify-content-center flex-wrap mt-3">
+<div class="d-flex justify-content-center text-center"><h4>Click on the card to reveal meanings</h4></div>
+<div class="d-flex justify-content-center flex-wrap mt-1">
     <div class="learn-card" id="card"></div>
 </div>
 <div class="d-flex justify-content-center mt-2">
-<button onclick="showCard()">Next Card</button></div>
+<button onclick="showCard()" class="btn next-button">Next Card</button></div>
 
 <script src="scripts/learn.js"></script>
 </body>
