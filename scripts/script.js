@@ -1,12 +1,14 @@
 const question = document.getElementById('card-question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const scoreCount = document.getElementById("score");
+const timer = document.getElementById("timer");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+let timerInterval;
 
 let questions = [
     {
@@ -213,6 +215,7 @@ let questions = [
     score = 0;
     availableQuestions = [...questions];
     scoreCount.innerText = 0 + '/22';
+    startTimer();
     getNewCard();
  }
 
@@ -261,6 +264,26 @@ let questions = [
     score += num;
     scoreCount.innerText = score + '/22';
  }
+
+ // TIMER
+
+ function startTimer() {
+    clearInterval(timerInterval);
+    let second = 0;
+    let minute = 0;
+
+    timerInterval = setInterval(function () {
+    timer.innerHTML =  (minute < 10 ? '0' + minute : minute) +
+    ':' +
+    (second < 10 ? '0' + second : second);
+    second++;
+    if (second == 60) {
+        minute++;
+        second = 0;
+    }
+ }, 1000);
+ };
+
 
   startGame();
 
