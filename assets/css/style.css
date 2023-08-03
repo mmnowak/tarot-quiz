@@ -2,3 +2,8 @@
     width: 500px;
     border: 2px solid black;
 }
+
+.choice-prefix {
+    padding: 0.2rem 0.5rem;
+    background-color: blue;
+}
