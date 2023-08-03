@@ -9,9 +9,13 @@ body {
     background-repeat: repeat;
 }
 
-nav {
+.navbar {
     background-color: #BC943F;
-    height: 40px;
+}
+
+.navbar-collapse {
+    text-align: center;
+    background-color: #BC943F;
 }
 
 #game-container {
@@ -44,4 +48,9 @@ nav {
 
 .incorrect {
     background-color: red;
+}
+
+.game-info {
+    background-color: #BC943F;
+    text-align: center;
 }
