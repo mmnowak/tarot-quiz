@@ -25,7 +25,10 @@ let cards = [
     '<div class="card-front"><img src="assets/images/tarot/world.jpg" alt="The World"></img></div><div class="card-reverse"><p>Completion, integration, accomplishment, travel</p></div>',
 ];
 
+window.onload = showCard();
+
 function showCard() {
+    cardMeanings.classList.remove('flip');
     const cardIndex = Math.floor(Math.random() * cards.length);
     currentCard = cards[cardIndex];
     cardMeanings.innerHTML = currentCard;
@@ -33,6 +36,6 @@ function showCard() {
 
 function flipCard() {
     cardMeanings.classList.toggle('flip');
-}
+};
 
 cardMeanings.addEventListener('click', flipCard);
