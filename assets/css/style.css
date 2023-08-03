@@ -18,6 +18,9 @@ body {
     background-color: #BC943F;
 }
 
+/* ------------ GAME PAGE ------------ */
+
+
 #game-container {
     width: 500px;
     border: 2px solid black;
@@ -66,3 +69,40 @@ body {
     color: #BC943F;
     background-color: black;
 }
+
+/* ------------ LEARN PAGE ------------ created with https://www.w3schools.com/howto/howto_css_flip_card.asp*/
+
+.learn-card {
+    height: 400px;
+    width: 232px;
+    position: relative;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transform: scale(1);
+}
+
+.learn-card img {
+    height: 400px;
+    width: 232px;
+}
+
+.learn-card.flip {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-reverse {
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+
+.card-reverse {
+    height: 400px;
+    width: 232px;
+    background-color: blue;
+    transform: rotateY(180deg);
+}
+
+
