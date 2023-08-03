@@ -53,4 +53,16 @@ body {
 .game-info {
     background-color: #BC943F;
     text-align: center;
+    font-size: x-large;
+}
+
+/* ------------ INDEX PAGE ------------ */
+
+.index-button {
+    background-color: #BC943F;
+}
+
+.index-button:hover {
+    color: #BC943F;
+    background-color: black;
 }

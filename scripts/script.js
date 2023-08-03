@@ -1,7 +1,6 @@
 const question = document.getElementById('card-question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
-console.log(choices);
-console.log(question);
+const scoreCount = document.getElementById("score");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -213,7 +212,7 @@ let questions = [
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
-    console.log(availableQuestions);
+    scoreCount.innerText = 0 + '/22';
     getNewCard();
  }
 
@@ -247,14 +246,21 @@ let questions = [
 
       $(selectedChoice).addClass(classToApply);
 
+      classToApply === "correct" ? incrementScore(1) : console.log("incorrect answer");
+
       setTimeout(() => {
             $(selectedChoice).removeClass(classToApply);
         getNewCard();
-    }, 1000)
+    }, 600)
     });
  });
 
- 
+ // SCORE
 
- startGame();
+ function incrementScore(num) {
+    score += num;
+    scoreCount.innerText = score + '/22';
+ }
+
+  startGame();
 
