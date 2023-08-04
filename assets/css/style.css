@@ -7,6 +7,7 @@ body {
     height: auto;
     background-image: url('../images/backgroundimg.jpg') !important;
     background-repeat: repeat;
+    font-family: 'Philosopher', sans-serif;
 }
 
 .navbar {
@@ -32,10 +33,13 @@ body {
     background-color: black;
     color: #BC943F;
     border: 2px solid #BC943F;
+    border-radius: 3px;
 }
 
 .choice-text {
     background-color: #BC943F;
+    border-radius: 2px;
+    font-size: large;
 }
 
 #card-question img {
@@ -45,17 +49,24 @@ body {
 }
 
 .correct {
-    background-color: green;
+    background-color: #48B448;
 }
 
 .incorrect {
-    background-color: red;
+    background-color: #BB5541;
 }
 
 .game-info {
     background-color: #BC943F;
     text-align: center;
     font-size: x-large;
+    border-radius: 5px;
+}
+
+.game-info h3 {
+    background-color: black;
+    color: #BC943F;
+    border-radius: 5px;
 }
 
 /* ------------ INDEX PAGE ------------ */
@@ -107,7 +118,7 @@ body {
     transform: rotateY(180deg);
     border: 3px solid black;
     text-align: center;
-    font-size: x-large;
+    font-size: xx-large;
     padding: 5px;
     overflow-wrap: break-word;
 }
