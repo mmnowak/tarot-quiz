@@ -36,7 +36,24 @@
 9. [Deployment](#deployment)
 11. [Acknowledgements](#acknowledgements)
 
-### Credits
+## Design
+
+### Wireframes
+
+<details><summary>Index Page</summary>
+<img src="documentation/readme/wireframes/wireframe3.png">
+</details>
+
+<details><summary>Game Page</summary>
+<img src="documentation/readme/wireframes/wireframe1.png">
+</details>
+
+<details><summary>Learn Tarot Page</summary>
+<img src="documentation/readme/wireframes/wireframe2.png">
+</details>
+
+
+## Credits
 
 Flip Card function created with https://marina-ferreira.github.io/tutorials/js/memory-game/
 Quiz created following a tutorial from James Q Quick https://www.youtube.com/watch?v=DFhmNLKwwGw
