@@ -39,8 +39,7 @@ body {
 }
 
 #card-question img {
-    height: 30%;
-    width: 30%;
+    height: 250px;
     border: solid 3px black;
     margin: 1.5rem;
 }
@@ -70,7 +69,7 @@ body {
     background-color: black;
 }
 
-/* ------------ LEARN PAGE ------------ created with https://www.w3schools.com/howto/howto_css_flip_card.asp*/
+/* ------------ LEARN PAGE ------------ */
 
 .learn-card {
     height: 400px;

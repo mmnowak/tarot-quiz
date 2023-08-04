@@ -1,5 +1,11 @@
 const cardMeanings = document.getElementById("card");
 
+/**
+ * Array of tarot cards and their meanings.
+ * Each object contains a front face, which is a tarot card image,
+ *  and a back face div which contains paragraph stating the meaning of the card. 
+ * The meaning will be revealed when the card is clicked.
+ */
 let cards = [
     '<div class="card-front"><img src="assets/images/tarot/fool.jpg" alt="The Fool"></img></div><div class="card-reverse"><p>Beginnings, innocence, spontaneity, a free spirit</p></div>',
     '<div class="card-front"><img src="assets/images/tarot/magician.jpg" alt="The Magician"></img></div><div class="card-reverse"><p>Manifestation, resourcefulness, power, inspired action</p></div>',
@@ -25,15 +31,20 @@ let cards = [
     '<div class="card-front"><img src="assets/images/tarot/world.jpg" alt="The World"></img></div><div class="card-reverse"><p>Completion, integration, accomplishment, travel</p></div>',
 ];
 
+// Loads the first card straight away
 window.onload = showCard();
 
+// Loads a tarot card
 function showCard() {
     cardMeanings.classList.remove('flip');
     const cardIndex = Math.floor(Math.random() * cards.length);
     currentCard = cards[cardIndex];
     cardMeanings.innerHTML = currentCard;
+    cards.splice(cardIndex, 1); // Allows showing a card only once per deck
+    if (cards.length === 0) {window.location.reload()}; // Start showing the cards again
 };
 
+// Shows a card meaning
 function flipCard() {
     cardMeanings.classList.toggle('flip');
 };

@@ -1,3 +1,4 @@
+// Variable declarations
 const question = document.getElementById('card-question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const scoreCount = document.getElementById("score");
@@ -9,6 +10,10 @@ let score = 0;
 let availableQuestions = [];
 let timerInterval;
 
+/**
+ * Array of quiz questions. Each object contains a picture of a tarot card,
+ * four answer options, and the correct answer.
+ */
 let questions = [
     {
         question: '<img src="assets/images/tarot/fool.jpg" alt="The Fool"></img>',
@@ -209,6 +214,7 @@ let questions = [
     },
 ];
 
+// Resets the game stats to the beginning and shows a new card
  function startGame() {
     score = 0;
     availableQuestions = [...questions];
@@ -217,21 +223,24 @@ let questions = [
     getNewCard();
  }
 
+ // Generates a random card from the array
  function getNewCard() {
-    if (availableQuestions.length === 0) {return window.location.assign('/end.html')};
+    if (availableQuestions.length === 0) {return window.location.assign('/end.html')}; // Note to self - change this later
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerHTML = currentQuestion.question;
+// Shows answers from the array
     choices.forEach((choice) => {
         const option = choice.dataset['option'];
         choice.innerText = currentQuestion['choice' + option]
     });
-
+// Removes cards that were already shown from the array
     availableQuestions.splice(questionIndex, 1);
     acceptingAnswers = true;
  };
 
+// Listens for clicks on the answer choices paragraphs
  choices.forEach((choice) => {
     choice.addEventListener("click", e => {
         if (!acceptingAnswers) return;
@@ -240,11 +249,13 @@ let questions = [
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['option'];
 
+// Adds a colour class indicating whether the answer was correct or incorrect
         const classToApply =
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
       $(selectedChoice).addClass(classToApply);
 
+// Increments score by 1 if the answer was correct
       classToApply === "correct" ? incrementScore(1) : console.log("incorrect answer");
 
       setTimeout(() => {
@@ -254,15 +265,13 @@ let questions = [
     });
  });
 
- // SCORE
-
+ // Shows the score
  function incrementScore(num) {
     score += num;
     scoreCount.innerText = score + '/22';
  }
 
- // TIMER
-
+ // Shows how much time has passed since the game has started
  function startTimer() {
     clearInterval(timerInterval);
     let second = 0;
