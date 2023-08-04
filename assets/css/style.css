@@ -11,12 +11,22 @@ body {
 }
 
 .navbar {
-    background-color: #BC943F;
+    background: linear-gradient(90deg, rgba(231,208,106,1) 0%, rgba(188,148,63,1) 50%, rgba(231,208,106,1) 100%);
 }
 
 .navbar-collapse {
     text-align: center;
-    background-color: #BC943F;
+}
+
+.nav-link {
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
 }
 
 /* ------------ GAME PAGE ------------ */
@@ -45,7 +55,6 @@ body {
 #card-question img {
     height: 250px;
     border: solid 3px black;
-    margin: 1.5rem;
 }
 
 .correct {
