@@ -3,6 +3,7 @@ const question = document.getElementById('card-question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const scoreCount = document.getElementById("score");
 const timer = document.getElementById("timer");
+const endModal = document.getElementById("end-modal");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -225,7 +226,7 @@ let questions = [
 
  // Generates a random card from the array
  function getNewCard() {
-    if (availableQuestions.length === 0) {return window.location.assign('/end.html')}; // Note to self - change this later
+    if (availableQuestions.length === 0) {$('#end-modal').modal('show')}; // Shows the final message, created with Bootstrap documentation
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
@@ -270,6 +271,10 @@ let questions = [
     score += num;
     scoreCount.innerText = score + '/22';
  }
+
+ // Shows the final score at the end of the game
+
+ document.getElementById("final-score").innerText = 'You scored' + score;
 
  // Shows how much time has passed since the game has started
  function startTimer() {
