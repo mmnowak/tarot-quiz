@@ -4,6 +4,7 @@ const choices = Array.from(document.getElementsByClassName('choice-text'));
 const scoreCount = document.getElementById("score");
 const timer = document.getElementById("timer");
 const endModal = document.getElementById("end-modal");
+const endMessage = document.getElementById("end-modal-text");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -270,11 +271,21 @@ let questions = [
  function incrementScore(num) {
     score += num;
     scoreCount.innerText = score + '/22';
- }
 
- // Shows the final score at the end of the game
+    document.getElementById("final-score").innerText = 'You scored ' + score + ' out of 22!'; // Displays the final score in the pop up modal
 
- document.getElementById("final-score").innerText = 'You scored' + score;
+ // Displays a message in the end modal
+ if (score === 22) {
+    endMessage.innerText = "You got all of the cards right!"
+  } else if (score > 18 && score < 22) {
+    endMessage.innerText = "You're a Tarot master"
+  } else if (score > 10 && score <= 18) {
+    endMessage.innerText = "You're quite good"
+  } else if (score <= 10) {
+    endMessage.innerText = "You should practise more"
+  } else {console.log("error")};
+
+};
 
  // Shows how much time has passed since the game has started
  function startTimer() {
