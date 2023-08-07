@@ -235,7 +235,8 @@ let questions = [
 // Shows answers from the array
     choices.forEach((choice) => {
         const option = choice.dataset['option'];
-        choice.innerText = currentQuestion['choice' + option]
+        choice.innerText = currentQuestion['choice' + option];
+        choice.style.cursor = "pointer";
     });
 // Removes cards that were already shown from the array
     availableQuestions.splice(questionIndex, 1);
