@@ -227,7 +227,7 @@ let questions = [
 
  // Generates a random card from the array
  function getNewCard() {
-    if (availableQuestions.length === 0) {$('#end-modal').modal('show')}; // Shows the final message, created with Bootstrap documentation
+    if (availableQuestions.length === 0) {$(endModal).modal('show')}; // Shows the final message, created with Bootstrap documentation
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
@@ -272,7 +272,7 @@ let questions = [
     score += num;
     scoreCount.innerText = score + '/22';
 
-    document.getElementById("final-score").innerText = 'You scored ' + score + ' out of 22!'; // Displays the final score in the pop up modal
+    document.getElementById("final-score").innerText = 'You scored ' + score + ' out of 22'; // Displays the final score in the pop up modal
 
  // Displays a message in the end modal
  if (score === 22) {
@@ -301,8 +301,11 @@ let questions = [
     if (second == 60) {
         minute++;
         second = 0;
-    }
- }, 1000);
+    };
+    if (availableQuestions.length === 0) {
+        clearInterval(timerInterval)
+    }; // Stops the timer once all the questions have been answered
+    }, 1000); 
  };
 
   startGame();
