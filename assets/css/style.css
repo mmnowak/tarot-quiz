@@ -78,7 +78,8 @@ body {
     background-color: rgba(231,208,106,0.9);
     font-weight: 700;
     color: black;
-    font-size: large;
+    font-size: x-large;
+    line-height: 4pt;
 }
 
 .end-button {

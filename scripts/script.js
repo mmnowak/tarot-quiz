@@ -303,8 +303,9 @@ let questions = [
         second = 0;
     };
     if (availableQuestions.length === 0) {
-        clearInterval(timerInterval)
-    }; // Stops the timer once all the questions have been answered
+        clearInterval(timerInterval);
+        document.getElementById("final-time").innerText = "in " + minute + " minutes and " + second + " seconds!";
+    }; // Stops the timer once all the questions have been answered and displays the final time in the end game modal
     }, 1000); 
  };
 
