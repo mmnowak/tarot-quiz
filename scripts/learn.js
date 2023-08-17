@@ -7,7 +7,7 @@ const cardMeanings = document.getElementById("card");
  * The meaning will be revealed when the card is clicked.
  */
 let cards = [
-    '<div class="card-front"><img src="assets/images/tarot/fool.jpg" alt="The Fool"></img></div><div class="card-reverse"><p>Beginnings, innocence, spontaneity, a free spirit<button type="button" class="btn meaning-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">See more</button></p></div>',
+    '<div class="card-front"><img id="fool" src="assets/images/tarot/fool.jpg" alt="The Fool"></img></div><div class="card-reverse"><p>Beginnings, innocence, spontaneity, a free spirit<button type="button" class="btn meaning-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">See more</button></p></div>',
     '<div class="card-front"><img src="assets/images/tarot/magician.jpg" alt="The Magician"></img></div><div class="card-reverse"><p>Manifestation, resourcefulness, power, inspired action <button type="button" class="btn meaning-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">See more</button></p></div>',
     '<div class="card-front"><img src="assets/images/tarot/priestess.jpg" alt="The High Priestess"></img></div><div class="card-reverse"><p>Intuition, sacred knowledge, divine feminine, the subconscious mind <button type="button" class="btn meaning-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">See more</button></p></div>',
     '<div class="card-front"><img src="assets/images/tarot/empress.jpg" alt="The Empress"></img></div><div class="card-reverse"><p>Femininity, beauty, nature, nurturing, abundance <button type="button" class="btn meaning-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">See more</button></p></div>',

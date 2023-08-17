@@ -79,7 +79,7 @@ body {
     font-weight: 700;
     color: black;
     font-size: x-large;
-    line-height: 4pt;
+    
 }
 
 .end-button {
@@ -90,6 +90,21 @@ body {
 .end-button:hover {
     background-color: black;
     color: #BC943F;
+}
+
+#progress-bar {
+    width: 80%;
+    height: 1.5rem;
+    margin: 1% auto;
+    border: 0.2rem solid rgba(231,208,106,1);
+
+}
+
+#progress-bar-full {
+    height: 1.2rem;
+    background-color: rgba(231,208,106,1);
+    width: 0%;
+    color: black;
 }
 
 /* ------------ INDEX PAGE ------------ */

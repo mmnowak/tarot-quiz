@@ -5,12 +5,15 @@ const scoreCount = document.getElementById("score");
 const timer = document.getElementById("timer");
 const endModal = document.getElementById("end-modal");
 const endMessage = document.getElementById("end-modal-text");
+const progressBar = document.getElementById("progress-bar-full");
 
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
+let progress = 0;
 let availableQuestions = [];
 let timerInterval;
+
 
 /**
  * Array of quiz questions. Each object contains a picture of a tarot card,
@@ -219,6 +222,7 @@ let questions = [
 // Resets the game stats to the beginning and shows a new card
  function startGame() {
     score = 0;
+    progress = 0;
     availableQuestions = [...questions];
     scoreCount.innerText = 0 + '/22';
     startTimer();
@@ -227,8 +231,6 @@ let questions = [
 
  // Generates a random card from the array
  function getNewCard() {
-    if (availableQuestions.length === 0) {$(endModal).modal('show')}; // Shows the final message, created with Bootstrap documentation
-
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerHTML = currentQuestion.question;
@@ -241,7 +243,17 @@ let questions = [
 // Removes cards that were already shown from the array
     availableQuestions.splice(questionIndex, 1);
     acceptingAnswers = true;
+
+// Updates the progress bar
+if (availableQuestions.length < 21) {
+    progress++;
+    progressBar.style.width = `${(progress / 22) * 100}%`;
  };
+
+ if (availableQuestions.length === 0) {
+    progressBar.style.width = `100%`;
+    $(endModal).modal('show')}; // Shows the final message, created with Bootstrap documentation
+};
 
 // Listens for clicks on the answer choices paragraphs
  choices.forEach((choice) => {
@@ -277,13 +289,13 @@ let questions = [
 
  // Displays a message in the end modal
  if (score === 22) {
-    endMessage.innerText = "You got all of the cards right!"
+    endMessage.innerText = "You got all of the questions right! Well done, you have mastered the Major Arcana!"
   } else if (score > 18 && score < 22) {
-    endMessage.innerText = "You're a Tarot master"
+    endMessage.innerText = "Well done! You're a master of the Major Arcana."
   } else if (score > 10 && score <= 18) {
-    endMessage.innerText = "You're quite good"
+    endMessage.innerText = "You're quite good! Try again or press LEARN to practise memorizing the meanings using the flashcards."
   } else if (score <= 10) {
-    endMessage.innerText = "You should practise more"
+    endMessage.innerText = "Try again or press LEARN to practise memorizing the meanings using the flashcards."
   } else {console.log("error")};
 
 };
