@@ -32,13 +32,30 @@
     </div>
 </nav>
 
-<div class="container d-flex justify-content-center mt-5">
-    <button class="btn btn-lg index-button">HOW TO PLAY</button>
+<div class="modal fade" id="how-to-modal" tabindex="-1" aria-labelledby="howtomodalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" id="how-to-modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title ms-auto" id="howtomodalLabel">How to play</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          TarotQuiz has been created to help you memorize the meanings of the Major Arcana of the Rider-Waite tarot. Press play to start the game. You'll be shown a card with four answer choices. Select an answer you think is right to move on onto the next card. Practice until you improve your score! <br><br> To view the card meanings in a flashcard form, press LEARN.
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container text-center index-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    <div class="container d-flex justify-content-center mt-5">
+        <button class="btn btn-lg index-button" data-bs-toggle="modal" data-bs-target="#how-to-modal">HOW TO PLAY</button>
+    </div>
+    <div class="container d-flex justify-content-center mt-3">
+        <a class="btn btn-lg index-button m-4" role="button" href="game.html">PLAY</a>
+        <a class="btn btn-lg index-button m-4" role="button" href="learn.html">LEARN</a>
+    </div>
 </div>
-<div class="container d-flex justify-content-center mt-3">
-    <a class="btn btn-lg index-button m-4" role="button" href="game.html">PLAY</a>
-    <a class="btn btn-lg index-button m-4" role="button" href="learn.html">LEARN</a>
-</div>
+
 
 <script src="scripts/script.js"></script>
 </body>
