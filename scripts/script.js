@@ -293,9 +293,9 @@ if (availableQuestions.length < 21) {
   } else if (score > 18 && score < 22) {
     endMessage.innerText = "Well done! You're a master of the Major Arcana."
   } else if (score > 10 && score <= 18) {
-    endMessage.innerText = "You're quite good! Try again or press LEARN to practise memorizing the meanings using the flashcards."
+    endMessage.innerText = 'You are quite good! Try again or press "Learn Tarot" to practise memorizing the meanings using the flashcards.'
   } else if (score <= 10) {
-    endMessage.innerText = "Try again or press LEARN to practise memorizing the meanings using the flashcards."
+    endMessage.innerText = 'Try again or press "Learn Tarot" to practise memorizing the meanings using the flashcards.'
   } else {console.log("error")};
 
 };

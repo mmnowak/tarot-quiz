@@ -1,12 +1,11 @@
 const cardMeanings = document.getElementById("card");
-
 /**
  * Array of tarot cards and their meanings.
  * Each object contains a front face, which is a tarot card image,
  *  and a back face div which contains paragraph stating the meaning of the card. 
  * The meaning will be revealed when the card is clicked.
  */
-let cards = [
+var cards = [
     '<div class="card-front"><img id="fool" src="assets/images/tarot/fool.jpg" alt="The Fool"></img></div><div class="card-reverse"><p>Beginnings, innocence, spontaneity, a free spirit<button type="button" class="btn meaning-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">See more</button></p></div>',
     '<div class="card-front"><img src="assets/images/tarot/magician.jpg" alt="The Magician"></img></div><div class="card-reverse"><p>Manifestation, resourcefulness, power, inspired action <button type="button" class="btn meaning-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">See more</button></p></div>',
     '<div class="card-front"><img src="assets/images/tarot/priestess.jpg" alt="The High Priestess"></img></div><div class="card-reverse"><p>Intuition, sacred knowledge, divine feminine, the subconscious mind <button type="button" class="btn meaning-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">See more</button></p></div>',
@@ -50,3 +49,31 @@ function flipCard() {
 };
 
 cardMeanings.addEventListener('click', flipCard);
+
+
+// Gets data from tarot_api by howlCode
+
+const baseURL = "https://raw.githubusercontent.com/howlCode/tarot_api/master/lib/cards.json";
+
+function getData(cb) {
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("GET", baseURL);
+    xhr.send();
+
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            cb(JSON.parse(this.responseText));
+        }
+    };
+};
+
+// Shows the full meaning of a card
+function showFullMeaning(obj) {
+    cards.forEach(function(card) {
+    var indNum = cards.indexOf(card);
+    document.getElementById("fullmeaning").innerText = obj[indNum].full_meaning
+});
+};
+
+getData(showFullMeaning);
