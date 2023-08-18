@@ -26,7 +26,6 @@ body {
 .nav-link {
     font-size: large;
     text-transform: uppercase;
-    font-weight: 700;
     color: black;
 }
 
@@ -101,10 +100,12 @@ footer a:hover {
 
 #end-modal-content {
     background-color: rgba(231,208,106,0.9);
-    font-weight: 700;
     color: black;
     font-size: x-large;
-    
+}
+
+#results {
+    line-height: 4px;
 }
 
 .end-button {
