@@ -104,10 +104,6 @@ footer a:hover {
     font-size: x-large;
 }
 
-#results {
-    line-height: 4px;
-}
-
 .end-button {
     background-color: black;
     color: rgba(231,208,106,1);
@@ -239,4 +235,26 @@ h4 {
     color: black;
     font-size: larger;
     text-align: center;
+}
+
+/* ------------ CONTACT PAGE ------------ */
+
+.contact-area {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+    margin: auto;
+}
+
+.contact-area h1 {
+    color: #BC943F;
+}
+
+.contact-form {
+    width: 70%;
+    margin: auto;
+}
+
+.contact-form button {
+    background-color: #BC943F;
+    color: black;
 }
