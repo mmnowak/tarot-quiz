@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.ico">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- NAVIGATION BAR CREATED WITH BOOTSTRAP -->
@@ -34,7 +35,7 @@
  
 <!-- A bootstrap modal containing a card's full meaning obtained from the tarot_api (see the readme file )-->
 <div class="modal fade" id="fullmeaningmodal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content" id="fullmeaningmodal-content">
       <div class="modal-body">
         <div id="fullmeaning"></div>
@@ -52,9 +53,6 @@
 <button onclick="showCard()" class="btn next-button">Next Card</button></div></div>
 <footer class="w-100"><a href="https://github.com/mmnowak" target="_blank"><i class="fa-brands fa-github"></i></a></footer></div>
 
-
 <script src="scripts/learn.js"></script>
-<script src="scripts/meanings.js" type="module"></script>
-<script src="scripts/cards.js"></script>
 </body>
 </html>

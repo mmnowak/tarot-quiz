@@ -291,11 +291,11 @@ if (availableQuestions.length < 21) {
  if (score === 22) {
     endMessage.innerText = "You got all of the questions right! Well done, you have mastered the Major Arcana!"
   } else if (score > 18 && score < 22) {
-    endMessage.innerText = "Well done! You're a master of the Major Arcana."
+    endMessage.innerText = "Well done! You're a master of the Major Arcana. Why not play again to see if you can get all the questions right?"
   } else if (score > 10 && score <= 18) {
     endMessage.innerText = 'You are quite good! Try again or press "Learn Tarot" to practise memorizing the meanings using the flashcards.'
   } else if (score <= 10) {
-    endMessage.innerText = 'Try again or press "Learn Tarot" to practise memorizing the meanings using the flashcards.'
+    endMessage.innerText = 'Plenty of room for improvement! Try again or press "Learn Tarot" to practise memorizing the meanings using the flashcards.'
   } else {console.log("error")};
 
 };
