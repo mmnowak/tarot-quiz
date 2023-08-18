@@ -14,7 +14,6 @@ let progress = 0;
 let availableQuestions = [];
 let timerInterval;
 
-
 /**
  * Array of quiz questions. Each object contains a picture of a tarot card,
  * four answer options, and the correct answer.
@@ -322,5 +321,19 @@ if (availableQuestions.length < 21) {
     }, 1000); 
  };
 
-  startGame();
+ // Redirects to the index page after 10 seconds when error 404 is encountered
+  if (window.location.pathname === '/404.html') {
+        setTimeout(function () {
+          window.location.href = './index.html';
+        }, 10000);}; 
+
+// Countdown timer showing when the user will be redirected to the index page when error 404 is encountered
+
+var timeLeft = 9;
+var countdownTimer = setInterval(function() {
+    document.getElementById("return-timer").innerHTML = 'Redirecting in... ' + timeLeft;
+    timeLeft -= 1;
+}, 1000);
+
+startGame();
 

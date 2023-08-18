@@ -258,3 +258,16 @@ h4 {
     background-color: #BC943F;
     color: black;
 }
+
+/* ------------ 404 PAGE ------------ */
+
+#error-message {
+    width: 60%;
+    background-color: rgba(231,208,106,0.7);
+    text-align: center;
+    margin: auto;
+}
+
+#error-message h1 {
+    font-size: 6em;
+}
