@@ -198,7 +198,7 @@ footer a:hover {
     transform: rotateY(180deg);
     border: 3px solid black;
     text-align: center;
-    font-size: large;
+    font-size: x-large;
     padding: 5px;
     overflow-wrap: break-word;
 }
@@ -228,3 +228,9 @@ h4 {
     color: #BC943F;
 }
 
+#fullmeaningmodal-content {
+    background-color: rgba(231,208,106, 1);
+    color: black;
+    font-size: larger;
+    text-align: justify;
+}
