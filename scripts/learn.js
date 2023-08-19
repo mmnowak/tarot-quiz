@@ -45,13 +45,13 @@ function getData(cb) {
             cb(JSON.parse(this.responseText));
         }
     };
-};
+}
 
 // Loads a tarot card
 function showCard() {
     cardMeanings.classList.remove('flip');
-    cardIndex = Math.floor(Math.random() * cards.length);
-    currentCard = cards[cardIndex];
+    const cardIndex = Math.floor(Math.random() * cards.length);
+    const currentCard = cards[cardIndex];
     cardMeanings.innerHTML = currentCard;
 
 // Shows the full meaning of a card retreived from tarot_api (see more in the README file)
@@ -59,18 +59,18 @@ function showFullMeaning(obj) {
     console.log(currentCard);
     console.log(cardIndex);
     cards.forEach(function callback(card, index) {
-    document.getElementById("fullmeaning").innerText = obj[cardIndex].full_meaning
+    document.getElementById("fullmeaning").innerText = obj[cardIndex].full_meaning;
 });
-};
+}
 
 getData(showFullMeaning);
 
-};
+}
 
 // Shows a card meaning
 function flipCard() {
     cardMeanings.classList.toggle('flip');
-};
+}
 
 cardMeanings.addEventListener('click', flipCard);
 
