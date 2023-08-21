@@ -36,6 +36,43 @@
 9. [Deployment](#deployment)
 11. [Acknowledgements](#acknowledgements)
 
+## User Experience
+
+### Target Audience
+
+* People interested in learning more about Tarot;
+* Tarot begginers and intermediate users;
+* People interested in spirituality and psychology;
+* Visual learners;
+
+### User Requirements and Expectations
+
+* Links and buttons that work as expected.
+* A simple and intuitive navigation system.
+* Interactive feedback and notifications.
+* Information presented in clear and concise manner.
+* Visually appealing design.
+* Easy way to submit questions and feedback.
+* Accessibility.
+
+### User Stories
+
+#### First Time visitor
+1.	As a first-time user, I want to know the purpose of the site immediately,
+2.	As a first-time user, I want to easily find out how to play the game,
+3.	As a first-time user, I want to know how far along I am in the quiz game,
+4.	As a first-time user, I want to know whether the answer I selected was right or wrong,
+5.	As a first-time user, I want to know my final score,
+6.	As a first-time user, I want to receive feedback about my performance,
+7.	As a first-time user, I want to find out how to use the flashcards page.
+
+#### Returning visitor
+1.	As a returning user, I want the feedback at the end of the game to reflect my performance,
+2.	As a returning user, I want to be able to contact the page owners with any feedback I might have,
+3.	As a returning user, I want to find out the full meaning of each card,
+4.	As a returning user, I want to be able to navigate the website easily.
+
+
 ## Design
 
 ### Wireframes

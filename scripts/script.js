@@ -247,12 +247,12 @@ let questions = [
 if (availableQuestions.length < 21) {
     progress++;
     progressBar.style.width = `${(progress / 22) * 100}%`;
- };
+ }
 
  if (availableQuestions.length === 0) {
     progressBar.style.width = `100%`;
-    $(endModal).modal('show')}; // Shows the final message, created with Bootstrap documentation
-};
+    $(endModal).modal('show');} // Shows the final message, created with Bootstrap documentation
+}
 
 // Listens for clicks on the answer choices paragraphs
  choices.forEach((choice) => {
@@ -275,7 +275,7 @@ if (availableQuestions.length < 21) {
       setTimeout(() => {
             $(selectedChoice).removeClass(classToApply);
         getNewCard();
-    }, 600)
+    }, 600);
     });
  });
 
@@ -288,16 +288,15 @@ if (availableQuestions.length < 21) {
 
  // Displays a message in the end modal
  if (score === 22) {
-    endMessage.innerText = "You got all of the questions right! Well done, you have mastered the Major Arcana!"
+    endMessage.innerText = "You got all of the questions right! Well done, you have mastered the Major Arcana!";
   } else if (score > 18 && score < 22) {
-    endMessage.innerText = "Well done! You're a master of the Major Arcana. Why not play again to see if you can get all the questions right?"
+    endMessage.innerText = "Well done! You're a master of the Major Arcana. Why not play again to see if you can get all the questions right?";
   } else if (score > 10 && score <= 18) {
-    endMessage.innerText = 'You are quite good! Try again or press "Learn Tarot" to practise memorizing the meanings using the flashcards.'
+    endMessage.innerText = 'You are quite good! Try again or press "Learn Tarot" to practise memorizing the meanings using the flashcards.';
   } else if (score <= 10) {
-    endMessage.innerText = 'Plenty of room for improvement! Try again or press "Learn Tarot" to practise memorizing the meanings using the flashcards.'
-  } else {console.log("error")};
-
-};
+    endMessage.innerText = 'Plenty of room for improvement! Try again or press "Learn Tarot" to practise memorizing the meanings using the flashcards.';
+  } else {console.log("error");}
+}
 
  // Shows how much time has passed since the game has started
  function startTimer() {
@@ -313,13 +312,13 @@ if (availableQuestions.length < 21) {
     if (second == 60) {
         minute++;
         second = 0;
-    };
+    }
     if (availableQuestions.length === 0) {
         clearInterval(timerInterval);
         document.getElementById("final-time").innerText = "in " + minute + " minutes and " + second + " seconds!";
-    }; // Stops the timer once all the questions have been answered and displays the final time in the end game modal
+    } // Stops the timer once all the questions have been answered and displays the final time in the end game modal
     }, 1000); 
- };
+ }
 
 startGame();
 
