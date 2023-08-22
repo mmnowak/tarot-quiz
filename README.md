@@ -29,9 +29,8 @@
     1. [Media](#media)
     2. [Code used](#code-used)
     3. [Content](#content)
-8. [Bugs](#bugs)
-9. [Deployment](#deployment)
-11. [Acknowledgements](#acknowledgements)
+8. [Deployment](#deployment)
+10. [Acknowledgements](#acknowledgements)
 
 ## User Experience
 
@@ -120,6 +119,8 @@ WebAIM Contrast Checker was used to ensure the site is accessible. Both [#BC943F
 
 #### Favicon
 
+![Favicon](documentation/readme/features/favicon.png)
+
 ### Index Page
 
 #### Index Text
@@ -197,6 +198,29 @@ I took the following steps to ensure the website is accessible:
 * Provided all card images with alternative description.
 * Used a sans serif font to ensure the website is dyslexia-friendly.
 
+## Technologies Used
+
+### Languages
+
+* [HTML](https://en.wikipedia.org/wiki/HTML)
+* [CSS](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+### Frameworks and Tools
+
+* [Bootstrap](https://getbootstrap.com/)
+* [Balsamiq](https://balsamiq.com/wireframes/)
+* [GitHub](https://github.com/)
+* [GitPod](https://www.gitpod.io/)
+* [Google Fonts](https://fonts.google.com/)
+* [Webaim.org Contrast Checker](https://webaim.org/)
+* [FontAwesome](https://fontawesome.com/)
+* [Favicon.io](https://favicon.io/)
+* [Gyazo](https://gyazo.com/en)
+* [EmailJS API](https://www.emailjs.com/)
+* [Tarot API](https://github.com/howlCode/tarot_api)
+
+
 ## Testing and Bugs
 
 [See TESTING.md for full breakdown of testing and bugs](https://github.com/mmnowak/tarot-quiz/blob/main/TESTING.md)
@@ -205,10 +229,46 @@ I took the following steps to ensure the website is accessible:
 
 ### Media
 
-The background image is a licence-free image obtained from [Vecteezy](https://www.vecteezy.com/vector-art/11134248-seamless-golden-space-pattern-with-stars-and-moon-phases-on-a-black-background-for-tarot-astrology-wallpaper-case-for-phone-magic-cosmic-sky-abstract-esoteric-ornament-vector-illustration)
+* The background image is a licence-free image obtained from [Vecteezy](https://www.vecteezy.com/vector-art/11134248-seamless-golden-space-pattern-with-stars-and-moon-phases-on-a-black-background-for-tarot-astrology-wallpaper-case-for-phone-magic-cosmic-sky-abstract-esoteric-ornament-vector-illustration)
 
-Tarot card images were obtained from [Sacred-texts](https://sacred-texts.com/tarot/xr/index.htm?fbclid=IwAR1m0h5EwuyQ-eJiX0mbEmaMEXWI2M4hZmp7wGdZdl5rV4TH2C3UTVa34vc). The images are from Rider-Waite tarot deck and are in public domain.
+* Tarot card images were obtained from [Sacred-texts](https://sacred-texts.com/tarot/xr/index.htm?fbclid=IwAR1m0h5EwuyQ-eJiX0mbEmaMEXWI2M4hZmp7wGdZdl5rV4TH2C3UTVa34vc). The images are from Rider-Waite tarot deck and are in public domain.
 
-Flip Card function created with https://marina-ferreira.github.io/tutorials/js/memory-game/
-Quiz created following a tutorial from James Q Quick https://www.youtube.com/watch?v=DFhmNLKwwGw
-Timer Created with tutorial from https://daily-dev-tips.com/posts/vanilla-javascript-timer/?utm_content=cmp-true
+### Code Used
+
+* Flip Card effect was created following [the tutorial by Marina Ferreira](https://marina-ferreira.github.io/tutorials/js/memory-game/) 
+
+* The Quiz was created following [the tutorial by James Q Quick](https://www.youtube.com/watch?v=DFhmNLKwwGw)
+
+* The timer was created following [the tutorial from Daily Dev Tips](https://daily-dev-tips.com/posts/vanilla-javascript-timer/?utm_content=cmp-true)
+
+### Content
+
+* The card meaning key words used in the quiz and on the flashcards were taken from [Biddy Tarot](https://www.biddytarot.com/tarot-card-meanings/major-arcana/)
+
+* The full card meanings are retreived from the [Tarot API by howlCode](https://github.com/howlCode/tarot_api)
+
+* The remaining content was written by Martyna Nowak
+
+## Deployment
+
+. Open the Github repository at [https://github.com/mmnowak/tarot-quiz](hhttps://github.com/mmnowak/tarot-quiz)
+2. Click on the Settings button;
+3. Select Pages;
+4. Select Source: Deploy from a branch and Branch: main / root;
+5. Click Save and find your deployed website at an address shown on top of the page.
+
+### Local Development
+
+#### How to Fork
+
+1. Open the Github repository at [https://github.com/mmnowak/tarot-quiz](hhttps://github.com/mmnowak/tarot-quiz)
+2. Click on the fork button found in the top right corner.
+
+#### How to Clone
+
+1. Open the Github repository at [https://github.com/mmnowak/tarot-quiz](hhttps://github.com/mmnowak/tarot-quiz)
+2. Click on the Code button;
+3. Choose to clone using either HTTPS, SSH, or Github CLI and click the copy button to copy the link address;
+4. In a code editor, change the current working directory to the location desired for the cloned directory;
+5. Type 'git clone' into the terminal and paste the link address copied earlier;
+6. Press enter to create a local clone.

@@ -89,6 +89,26 @@ See scores:
 
 ### Performance
 
+Index page
+
+![Lighthouse results for the index page](documentation/testing/lighthouse/lighthouseindex.png)
+
+Game page
+
+![Lighthouse results for the index page](documentation/testing/lighthouse/lighthousegame.png)
+
+Learn page
+
+![Lighthouse results for the index page](documentation/testing/lighthouse/lighthouselearn.png)
+
+Contact page
+
+![Lighthouse results for the index page](documentation/testing/lighthouse/lighthousecontact.png)
+
+404 page
+
+![Lighthouse results for the index page](documentation/testing/lighthouse/lighthouse404.png)
+
 ## Manual Testing
 
 ### Device testing
