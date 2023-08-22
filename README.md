@@ -2,6 +2,8 @@
 
 (Developer: Martyna Nowak)
 
+![Am I Responsive](documentation/readme/amiresponsive.png)
+
 ## Table of Content
 
 1. [Project Goals](#project-goals)
@@ -74,6 +76,24 @@
 
 
 ## Design
+
+### Colour scheme
+
+The colours were taken from the background image using a colour picker tool.
+
+![Colour palette](documentation/readme/palette.png)
+
+WebAIM Contrast Checker was used to ensure the site is accessible. Both [#BC943F](https://webaim.org/resources/contrastchecker/?fcolor=BC943F&bcolor=000000) and [#E7D06A](https://webaim.org/resources/contrastchecker/?fcolor=E7D06A&bcolor=000000) have passed the test. 
+
+### Typography
+
+[Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+
+![Josefin Sans font](documentation/readme/font.png)
+
+### Imagery
+
+![Vector image of moon and stars](documentation/readme/smallbackground.jpg)
 
 ### Wireframes
 
@@ -183,6 +203,12 @@ I took the following steps to ensure the website is accessible:
 * Used a sans serif font to ensure the website is dyslexia-friendly.
 
 ## Credits
+
+### Media
+
+The background image is a licence-free image obtained from [Vecteezy](https://www.vecteezy.com/vector-art/11134248-seamless-golden-space-pattern-with-stars-and-moon-phases-on-a-black-background-for-tarot-astrology-wallpaper-case-for-phone-magic-cosmic-sky-abstract-esoteric-ornament-vector-illustration)
+
+Tarot card images were obtained from [Sacred-texts](https://sacred-texts.com/tarot/xr/index.htm?fbclid=IwAR1m0h5EwuyQ-eJiX0mbEmaMEXWI2M4hZmp7wGdZdl5rV4TH2C3UTVa34vc). The images are from Rider-Waite tarot deck and are in public domain.
 
 Flip Card function created with https://marina-ferreira.github.io/tutorials/js/memory-game/
 Quiz created following a tutorial from James Q Quick https://www.youtube.com/watch?v=DFhmNLKwwGw
