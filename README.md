@@ -1,10 +1,12 @@
 # LEARN TAROT
 
-(Developer: Martyna Nowak)
-
 ![Am I Responsive](documentation/readme/amiresponsive.png)
 
-## Table of Content
+(Developer: Martyna Nowak)
+
+[Live Webpage](https://mmnowak.github.io/tarot-quiz/index.html)
+
+## Table of Contents
 
 1. [Project Goals](#project-goals)
     1. [Overview](#overview)
@@ -22,14 +24,7 @@
 5. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
     2. [Frameworks and Tools](#frameworks-and-tools)
-6. [Testing](#testing)
-    1. [HTML Validation](#html-validation)
-    2. [CSS Validation](#css-validation)
-    3. [Accessibility](#accessibility-testing)
-    4. [Performance](#performance)
-    5. [Device testing](#performance-tests-on-various-devices)
-    6. [Browser compatibility](#browser-compatibility)
-    7. [Testing user stories](#testing-user-stories)
+6. [Testing and bugs](#testing-and-bugs)
 7. [Credits](#credits)
     1. [Media](#media)
     2. [Code used](#code-used)
@@ -201,6 +196,10 @@ I took the following steps to ensure the website is accessible:
 * Used aria-current to indicate the current page for screen readers.
 * Provided all card images with alternative description.
 * Used a sans serif font to ensure the website is dyslexia-friendly.
+
+## Testing and Bugs
+
+[See TESTING.md for full breakdown of testing and bugs](https://github.com/mmnowak/tarot-quiz/blob/main/TESTING.md)
 
 ## Credits
 

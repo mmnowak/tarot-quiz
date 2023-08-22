@@ -18,8 +18,4 @@ function sendMail(contactForm) {
     );
 
     return false;
-}
-
-   (function(){
-      emailjs.init("ok74A3TGpTTklO-Hw");
-   })();
+};
