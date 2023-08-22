@@ -32,6 +32,22 @@
 8. [Deployment](#deployment)
 10. [Acknowledgements](#acknowledgements)
 
+## Project Goals
+
+The main purpose of this project is to create a user-friendly website dedicated to helping the user memorise the meanings of tarot cards. It features a multiple-choice quiz, a page containing flashcards, and a contact page allowing the user to submit their feedback. 
+
+### Overview
+
+### Goals
+
+1. A website that can be navigated easily and intuitively.
+2. A clean design that catches the eye.
+3. A website that looks good and responds correctly on all device sizes.
+4. A website that is accessible to all users.
+5. A quiz game that displays all questions and answer correctly.
+6. Interactivity - including a timer, a progress bar and a score display.
+7. Easy access for the user to contact the site owner.
+
 ## User Experience
 
 ### Target Audience
@@ -54,20 +70,21 @@
 ### User Stories
 
 #### First Time visitor
-1.	As a first-time user, I want to know the purpose of the site immediately,
-2.	As a first-time user, I want to easily find out how to play the game,
-3.	As a first-time user, I want to know how far along I am in the quiz game,
-4.	As a first-time user, I want to know whether the answer I selected was right or wrong,
-5.	As a first-time user, I want to know my final score,
-6.	As a first-time user, I want to receive feedback about my performance,
+1.	As a first-time user, I want to know the purpose of the site immediately.
+2.	As a first-time user, I want to easily find out how to play the game.
+3.	As a first-time user, I want to know how far along I am in the quiz game.
+4.	As a first-time user, I want to know whether the answer I selected was right or wrong.
+5.	As a first-time user, I want to know my final score.
+6.	As a first-time user, I want to receive feedback about my performance.
 7.	As a first-time user, I want to find out how to use the flashcards page.
 
 #### Returning visitor
-1.	As a returning user, I want the feedback at the end of the game to reflect my performance,
-2.	As a returning user, I want to be able to contact the page owners with any feedback I might have,
-3.	As a returning user, I want to find out the full meaning of each card,
-4.	As a returning user, I want to be able to navigate the website easily.
-
+8.	As a returning user, I want the feedback at the end of the game to reflect my performance.
+9.	As a returning user, I want to be able to contact the page owners with any feedback I might have.
+10.	As a returning user, I want to find out the full meaning of each card.
+11.	As a returning user, I want to be able to navigate the website easily.
+12. As the returning user, I want to be able to view the site on a range of device sizes.
+13. As a returning user, I want to be able to easily find my way back if I encounter an error page.
 
 ## Design
 

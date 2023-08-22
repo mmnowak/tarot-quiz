@@ -246,12 +246,13 @@ let questions = [
     acceptingAnswers = true;
 
 // Updates the progress bar
-if (availableQuestions.length < 21) {
+if (availableQuestions.length <= 22) {
     progress++;
+    console.log(progress);
     progressBar.style.width = `${(progress / 22) * 100}%`;
  }
 
- if (availableQuestions.length === 0) {
+ if (availableQuestions.length === 0 && progress === 22) {
     progressBar.style.width = `100%`;
     $(endModal).modal('show');} // Shows the final message, created with Bootstrap documentation
 }
