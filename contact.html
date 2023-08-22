@@ -18,15 +18,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-<!-- EmailJS API -->
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("ok74A3TGpTTklO-Hw");
-   })();
-</script>
 </head>
 <body>
 <!-- NAVIGATION BAR CREATED WITH BOOTSTRAP -->
@@ -51,15 +42,21 @@
 <div class="text-center mt-3 contact-area"><h1>Submit your feedback</h1><br>
 <div class="contact-form">
   <form onsubmit="return sendMail(this);">
+    <label for="name" class="d-none">Name</label>
     <input type="text" name="name" class="form-control" id="contact-name" placeholder="Name" required>
+    <label for="email" class="d-none">Email address</label>
     <input type="text" name="email" class="form-control" id="email-address" placeholder="Email Address" required>
+    <label for="feedback-message" class="d-none">Your message:</label>
     <textarea rows="6" name="feedback-message" class="form-control" id="feedback-message" placeholder="Your Feedback" required></textarea>
     <button type="submit" class="btn btn-lg">Send</button>
   </form>
 </div></div>
 
 
-<footer class="fixed-bottom p-1">Made by Martyna Nowak <a href="https://github.com/mmnowak" target="_blank"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/martyna-nowak-025790246/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></footer>
+<footer class="fixed-bottom p-1">Made by Martyna Nowak <a href="https://github.com/mmnowak" target="_blank" aria-label="The Github page of the site creator (opens in a new tab)"><i class="fa-brands fa-github"></i></a> <a href="https://www.linkedin.com/in/martyna-nowak-025790246/" target="_blank" aria-label="The Github page of the site creator (opens in a new tab)"><i class="fa-brands fa-linkedin"></i></a></footer>
 <script src="scripts/email.js"></script>
+<!-- EmailJS API -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
 </body>
 </html>

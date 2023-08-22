@@ -89,6 +89,98 @@
 <img src="documentation/readme/wireframes/wireframe2.png">
 </details>
 
+## Features
+
+### All Pages
+
+#### Navigation Bar
+
+![Navigation bar](documentation/readme/features/navbar.png)
+
+![Hamburger menu navigation bar](documentation/readme/features/navbarcollapsed.png)
+
+#### Footer
+
+![Footer](documentation/readme/features/footer.png)
+
+#### Favicon
+
+### Index Page
+
+#### Index Text
+
+![alt text](documentation/readme/features/indextext.png)
+
+#### Buttons
+
+![alt text](documentation/readme/features/indexbuttons.png)
+
+#### How to play Button
+
+![alt text](documentation/readme/features/howtobutton.png)
+
+#### How to play Modal
+
+![alt text](documentation/readme/features/howtomodal.png)
+
+### Quiz Page
+
+#### Progress Bar
+
+![alt text](documentation/readme/features/progressbar.png)
+
+#### Timer
+
+![alt text](documentation/readme/features/timer.png)
+
+#### Score
+
+![alt text](documentation/readme/features/score.png)
+
+#### Game
+
+![alt text](documentation/readme/features/game.png)
+
+##### Correct Choice
+
+![alt text](documentation/readme/features/corectanswer.png)
+
+##### Incorrect Choice
+
+![alt text](documentation/readme/features/incorrectanswer.png)
+
+#### End Message
+
+### Learn Page
+
+#### Flashcards
+
+![alt text](documentation/readme/features/flipcard.gif)
+
+#### Full Meaning Button and Modal
+
+![alt text](documentation/readme/features/fullmeaning.gif)
+
+#### Next Card Button
+
+![alt text](documentation/readme/features/nextcard.gif)
+
+### Contact Page
+
+![alt text](documentation/readme/features/contact.png)
+
+### 404 Page
+
+![alt text](documentation/readme/features/errorpage.gif)
+
+### Accessibility
+
+I took the following steps to ensure the website is accessible:
+
+* Used aria-labels for icons to to enable screen readers to understand them.
+* Used aria-current to indicate the current page for screen readers.
+* Provided all card images with alternative description.
+* Used a sans serif font to ensure the website is dyslexia-friendly.
 
 ## Credits
 

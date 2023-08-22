@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // EmailJS API implemented following a tutorial from CodeInstitute
 
 function sendMail(contactForm) {
@@ -11,9 +13,13 @@ function sendMail(contactForm) {
             console.log("SUCCESS", response);
         },
         function(error) {
-            console.log("ERROR")
+            console.log("ERROR");
         }
-    )
+    );
 
     return false;
-};
+}
+
+   (function(){
+      emailjs.init("ok74A3TGpTTklO-Hw");
+   })();

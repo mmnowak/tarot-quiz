@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const cardMeanings = document.getElementById("card");
 /**
  * Array of tarot cards and their meanings.

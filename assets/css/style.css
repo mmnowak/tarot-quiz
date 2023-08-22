@@ -211,8 +211,7 @@ footer a:hover {
 }
 
 .next-button:hover {
-    background-color: black;
-    color: #BC943F;
+    background-color: rgba(231,208,106,1);
 }
 
 h4 {
@@ -258,6 +257,10 @@ h4 {
     background-color: #BC943F;
     color: black;
     margin-top: 1%;
+}
+
+.contact-form button:hover {
+    background-color: rgba(231,208,106, 1);
 }
 
 /* ------------ 404 PAGE ------------ */
