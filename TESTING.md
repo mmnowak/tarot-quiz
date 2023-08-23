@@ -121,6 +121,79 @@ Contact page
 ## Manual Testing
 
 ### Device testing
+
+The website was tested on the following devices:
+
+* Lenovo Yoga 460
+* Xiaomi 11 Lite
+
+Here's screenshots of the site as viewed on selected devices:
+
+<details><summary>Xiaomi 11 Lite</summary>
+
+Index Page:
+
+
+<img src="documentation/testing/device-testing/mobileindex.jpg"  width="300">
+
+
+Game Page:
+
+
+<img src="documentation/testing/device-testing/mobilegame.jpg" width="300">
+
+
+Learn Page:
+
+
+<img src="documentation/testing/device-testing/mobilelearn.jpg" width="300">
+
+
+Contact Page:
+
+
+<img src="documentation/testing/device-testing/mobilecontact.jpg" width="300">
+
+
+404 Page:
+
+
+<img src="documentation/testing/device-testing/mobile404.jpg" width="300">
+</details>
+
+<details><summary>Lenovo Yoga 460</summary>
+
+Index Page:
+
+
+<img src="documentation/testing/device-testing/laptopindex.png">
+
+
+Game Page:
+
+
+<img src="documentation/testing/device-testing/laptopgame.png">
+
+
+Learn Page:
+
+
+<img src="documentation/testing/device-testing/laptoplearn.png">
+
+
+Contact Page:
+
+
+<img src="documentation/testing/device-testing/laptopcontact.png">
+
+
+404 Page:
+
+
+<img src="documentation/testing/device-testing/laptop404.png">
+</details>
+
+
 ### Browser compatibility
 
 | **Browser** | **Feature** | **Works as expected** | 

@@ -34,9 +34,9 @@
 
 ## Project Goals
 
-The main purpose of this project is to create a user-friendly website dedicated to helping the user memorise the meanings of tarot cards. It features a multiple-choice quiz, a page containing flashcards, and a contact page allowing the user to submit their feedback. 
-
 ### Overview
+
+The main purpose of this project is to create a user-friendly website dedicated to helping the user memorise the meanings of tarot cards. It features a multiple-choice quiz, a page containing flashcards, and a contact page allowing the user to submit their feedback. 
 
 ### Goals
 
