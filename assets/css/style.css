@@ -51,6 +51,9 @@ footer a:hover {
 
 /* ------------ GAME PAGE ------------ */
 
+.game {
+    width: 70% !important;
+}
 
 #game-container {
     width: 500px;
