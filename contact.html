@@ -47,10 +47,10 @@
     </div>
 </nav>
 
-<div id="page-container" class="d-flex vh-100 align-items-center justify-content-center"><div id="content-container" class="w-100">
+<div id="page-container" class="d-flex align-items-center justify-content-center"><div id="content-container" class="w-100">
 <div class="text-center mt-3 contact-area"><h1>Submit your feedback</h1><br>
 <div class="contact-form">
-  <form onsubmit="return sendMail(this);">
+  <form onsubmit="return sendMail(this);" id="contact-form">
     <label for="contact-name" class="d-none">Name</label>
     <input type="text" name="name" class="form-control" id="contact-name" placeholder="Name" required>
     <label for="email-address" class="d-none">Email address</label>

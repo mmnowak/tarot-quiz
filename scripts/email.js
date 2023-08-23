@@ -1,21 +1,10 @@
 /*jshint esversion: 6 */
 
-// EmailJS API implemented following a tutorial from CodeInstitute
+// EmailJS API implemented with a tutorial from CodeInstitute and EmailJS documentation
 
-function sendMail(contactForm) {
-    emailjs.send("service_x7xdzzi","tarotquizemail"), {
-        "from-name": contactForm.name.value,
-        "from-email": contactForm.email.value,
-        "feedback": contactForm.feedback-message.value,
-    }
-    .then(
-        function(response) {
-            console.log("SUCCESS", response);
-        },
-        function(error) {
-            console.log("ERROR");
-        }
-    );
-
-    return false;
-}
+emailjs.sendForm("service_x7xdzzi", "tarotquizemail", "#contact-form")
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });

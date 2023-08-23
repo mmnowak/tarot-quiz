@@ -148,6 +148,7 @@ footer a:hover {
     background-color: rgba(231,208,106,0.9);
     margin: auto;
     margin-top: 2%;
+    width: 80%;
 }
 
 #how-to-modal-content {
