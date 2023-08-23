@@ -113,6 +113,72 @@ Contact page
 
 ### Device testing
 ### Browser compatibility
+
+| **Browser** | **Feature** | **Works as expected** | 
+|:-----------:|:-----------:|:---------------------:|
+| Google Chrome | Navigation bar links | Yes |
+| Google Chrome | Index Page | Yes |
+| Google Chrome | Index Page Buttons | Yes |
+| Google Chrome | How to play button | Yes |
+| Google Chrome | How to play modal | Yes |
+| Google Chrome | Progress bar | Yes |
+| Google Chrome | Score counter | Yes |
+| Google Chrome | Timer | Yes |
+| Google Chrome | Quiz section | Yes |
+| Google Chrome | End game modal | Yes |
+| Google Chrome | Flashcards | Yes |
+| Google Chrome | Full meaning button | Yes |
+| Google Chrome | Next card button | Yes |
+| Google Chrome | Contact form | Yes |
+| Google Chrome | 404 page | Yes |
+| Opera | Navigation bar links | Yes |
+| Opera | Index Page | Yes |
+| Opera | Index Page Buttons | Yes |
+| Opera | How to play button | Yes |
+| Opera | How to play modal | Yes |
+| Opera | Progress bar | Yes |
+| Opera | Score counter | Yes |
+| Opera | Timer | Yes |
+| Opera | Quiz section | Yes |
+| Opera | End game modal | Yes |
+| Opera | Flashcards | Yes |
+| Opera | Full meaning button | Yes |
+| Opera | Next card button | Yes |
+| Opera | Contact form | Yes |
+| Opera | 404 page | Yes |
+| Microsoft Edge | Navigation bar links | Yes |
+| Microsoft Edge | Index Page | Yes |
+| Microsoft Edge | Index Page Buttons | Yes |
+| Microsoft Edge | How to play button | Yes |
+| Microsoft Edge | How to play modal | Yes |
+| Microsoft Edge | Progress bar | Yes |
+| Microsoft Edge | Score counter | Yes |
+| Microsoft Edge | Timer | Yes |
+| Microsoft Edge | Quiz section | Yes |
+| Microsoft Edge | End game modal | Yes |
+| Microsoft Edge | Flashcards | Yes |
+| Microsoft Edge | Full meaning button | Yes |
+| Microsoft Edge | Next card button | Yes |
+| Microsoft Edge | Contact form | Yes |
+| Microsoft Edge | 404 page | Yes |
+| Ecosia | Navigation bar links | Yes |
+| Ecosia | Index Page | Yes |
+| Ecosia | Index Page Buttons | Yes |
+| Ecosia | How to play button | Yes |
+| Ecosia | How to play modal | Yes |
+| Ecosia | Progress bar | Yes |
+| Ecosia | Score counter | Yes |
+| Ecosia | Timer | Yes |
+| Ecosia | Quiz section | Yes |
+| Ecosia | End game modal | Yes |
+| Ecosia | Flashcards | Yes |
+| Ecosia | Full meaning button | Yes |
+| Ecosia | Next card button | Yes |
+| Ecosia | Contact form | Yes |
+| Ecosia | 404 page | Yes |
+
+
+
 ### Testing user stories
 
 #### First Time visitor
