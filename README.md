@@ -108,6 +108,8 @@ The background image remains the same throughout the website. It is a vector ima
 
 ![Vector image of moon and stars](documentation/readme/smallbackground.jpg)
 
+Following feedback received on the peer-review Code Institute Slack channel, a blur effect was added to the background image to stop it from distracting from the foreground content.
+
 ### Wireframes
 
 The wireframes were created using the Balsamiq software for large/medium and small screens. 
@@ -230,6 +232,7 @@ I took the following steps to ensure the website is accessible:
 * Used aria-current to indicate the current page for screen readers.
 * Provided all card images with alternative description.
 * Used a sans serif font to ensure the website is dyslexia-friendly.
+* Used a contrast checker to ensure there is sufficient contrast between background and foreground colours.
 
 ## Technologies Used
 
@@ -273,6 +276,8 @@ I took the following steps to ensure the website is accessible:
 * The Quiz was created following [the tutorial by James Q Quick](https://www.youtube.com/watch?v=DFhmNLKwwGw)
 
 * The timer was created following [the tutorial from Daily Dev Tips](https://daily-dev-tips.com/posts/vanilla-javascript-timer/?utm_content=cmp-true)
+
+* The email.js file was created from the [EmailJS API documentation](https://www.emailjs.com/)
 
 ### Content
 
