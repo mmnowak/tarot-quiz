@@ -214,9 +214,10 @@ footer a:hover {
     background-color: rgba(231,208,106,1);
 }
 
-h4 {
+#learn-heading {
     color: #BC943F;
-    background-color: rgba(0, 0, 0, 0.7)
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: x-large;
 }
 
 .meaning-btn {

@@ -54,9 +54,13 @@ The W3C Jigsaw CSS Validation Service was used to validate the css file for the 
 
 ### Javascript Validation
 
+JSHint was used to validate the HTML of the website. No errors were found. There were some warnings, all related to either EmailJS API or a bootstrap modal.
+
 Quiz.js
 
 ![quiz.js](documentation/testing/jslintgame.png)
+
+The undefined variable `"$"` comes from a command taken from the Bootstrap documentation `("$(endModal).modal('show')")` which depends on jquery. My attempts to rewrite it into vanilla JS were unsuccessful.
 
 Learn.js
 
@@ -65,6 +69,8 @@ Learn.js
 Email.js
 
 ![quiz.js](documentation/testing/jslintemail.png)
+
+The undefined variables come from EmailJS API. The unused variable is actually a function being called when the user presses the SEND button.
 
 Error.js
 
@@ -82,12 +88,16 @@ See scores:
 
 [Learn.html](https://wave.webaim.org/report#/https://mmnowak.github.io/tarot-quiz/learn.html)
 
-[Contact.html](https://wave.webaim.org/report#/https://8000-mmnowak-myfulltemplate-lmfoz60052m.ws-eu104.gitpod.io/contact.html)
+[Contact.html](https://wave.webaim.org/report#/https://mmnowak.github.io/tarot-quiz/contact.html)
 
-[404.html](https://wave.webaim.org/report#/https://8000-mmnowak-myfulltemplate-lmfoz60052m.ws-eu104.gitpod.io/404.html)
+[404.html](https://wave.webaim.org/report#/https://mmnowak.github.io/tarot-quiz/404.html)
+
+All the alerts refer to either a redundant link in the navigation bar (both HOME link and the site name lead to the index page when clicked on) or missing h1 heading on the game page.
 
 
 ### Performance
+
+Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website. All pages have passed the audit.
 
 Index page
 
