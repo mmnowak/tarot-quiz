@@ -58,16 +58,12 @@ function showCard() {
 
 // Shows the full meaning of a card retreived from tarot_api (see more in the README file)
 function showFullMeaning(obj) {
-    console.log(currentCard);
-    console.log(cardIndex);
     cards.forEach(function callback(card, index) {
     document.getElementById("fullmeaning").innerText = obj[cardIndex].full_meaning;
 });
 }
 
-getData(showFullMeaning);
-
-}
+getData(showFullMeaning);}
 
 // Shows a card meaning
 function flipCard() {

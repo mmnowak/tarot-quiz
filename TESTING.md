@@ -45,7 +45,6 @@ See Scores:
 [404 Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmmnowak.github.io%2Ftarot-quiz%2F404.html)
 
 
-
 ### CSS Validation
 
 The W3C Jigsaw CSS Validation Service was used to validate the css file for the website via file upload. No errors were found.
@@ -341,7 +340,6 @@ Contact page
 <img src="documentation/testing/user-testing/us13a.gif">
 <img src="documentation/testing/user-testing/us13b.gif">
 </details>
-
 
 
 ### Feature testing results table

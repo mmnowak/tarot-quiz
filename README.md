@@ -90,7 +90,7 @@ The main purpose of this project is to create a user-friendly website dedicated 
 
 ### Colour scheme
 
-The colours were taken from the background image using a colour picker tool.
+The colours were taken from the [background image](#imagery) using a colour picker tool.
 
 ![Colour palette](documentation/readme/palette.png)
 
@@ -98,26 +98,38 @@ WebAIM Contrast Checker was used to ensure the site is accessible. Both [#BC943F
 
 ### Typography
 
-[Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+The font used throughout the website is [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans). The font was selected as it looks whimsical while still being easy to read. A sans serif font was specifically chosen as it is dyslexia-friendly.
 
 ![Josefin Sans font](documentation/readme/font.png)
 
 ### Imagery
 
+The background image remains the same throughout the website. It is a vector image of moon and stars. The image is intended to be associated with magic, mysticism and whimsy.
+
 ![Vector image of moon and stars](documentation/readme/smallbackground.jpg)
 
 ### Wireframes
 
+The wireframes were created using the Balsamiq software for large/medium and small screens. 
+
 <details><summary>Index Page</summary>
 <img src="documentation/readme/wireframes/wireframe3.png">
+<img src="documentation/readme/wireframes/wireframemobile3.png">
 </details>
 
 <details><summary>Game Page</summary>
 <img src="documentation/readme/wireframes/wireframe1.png">
+<img src="documentation/readme/wireframes/wireframemobile1.png">
 </details>
 
 <details><summary>Learn Tarot Page</summary>
 <img src="documentation/readme/wireframes/wireframe2.png">
+<img src="documentation/readme/wireframes/wireframemobile2.png">
+</details>
+
+<details><summary>Contact Page</summary>
+<img src="documentation/readme/wireframes/wireframe4.png">
+<img src="documentation/readme/wireframes/wireframemobile4.png">
 </details>
 
 ## Features
@@ -193,6 +205,10 @@ WebAIM Contrast Checker was used to ensure the site is accessible. Both [#BC943F
 #### Full Meaning Button and Modal
 
 ![alt text](documentation/readme/features/fullmeaning.gif)
+
+![alt text](documentation/readme/features/tarotapi1.png)
+
+![alt text](documentation/readme/features/tarotapi2.png)
 
 #### Next Card Button
 
