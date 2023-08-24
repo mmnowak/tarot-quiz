@@ -303,6 +303,7 @@ This method was chosen mostly due to the fact that the API documentation only fe
 
 * Features a contact form which allows the user to contact the page owner with any questions or feedback;
 * All fields are mandatory;
+* The font labels are used to allow access for screen readers; they are hidden from display as the input required is already indicated by the placeholder text.
 * Uses EmailJS API to send emails;
 * User stories covered: 9.
 
@@ -383,7 +384,7 @@ I took the following steps to ensure the website is accessible:
 
 ## Deployment
 
-. Open the Github repository at [https://github.com/mmnowak/tarot-quiz](hhttps://github.com/mmnowak/tarot-quiz)
+1. Open the Github repository at [https://github.com/mmnowak/tarot-quiz](hhttps://github.com/mmnowak/tarot-quiz)
 2. Click on the Settings button;
 3. Select Pages;
 4. Select Source: Deploy from a branch and Branch: main / root;
@@ -404,6 +405,8 @@ I took the following steps to ensure the website is accessible:
 4. In a code editor, change the current working directory to the location desired for the cloned directory;
 5. Type 'git clone' into the terminal and paste the link address copied earlier;
 6. Press enter to create a local clone.
+
+## Acknowledgements
 
 I would like to express my gratitude to:
 

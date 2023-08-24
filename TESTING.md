@@ -417,6 +417,21 @@ Contact Page:
 
 ### Feature testing results table
 
+**All Pages**
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Whole Page | The page is fully responsive | Tested on various devices as well as Google Developer Tools screen size simulator | All elements are fully responsive | Pass |
+| Background Image | Appears on all pages, the blur effect is displayed | Tested on various device sizes and browsers | Appears correctly | Pass |
+| Favicon | Appears on all pages| Tested on various device sizes and browsers | Appears correctly | Pass |
+| Navigation bar | Appears on all pages, collapses into a hamburger menu on smaller devices | Tested on various device sizes and browsers | Appears correctly | Pass |
+| Navigation bar links | Opens correct pages when clicked | Clicked on the links | Links open correctly | Pass |
+| Navigation bar logo | Opens the index page when clicked | Clicked on the logo | Directs to the index page | Pass |
+| Footer | Appears on all pages, is at the bottom of the page | Tested on various device sizes and browser | Appears correctly | Pass |
+| Console | No errors appear | Tested all the pages via Google Dev Toold | No errors are logged | Pass |
+
+
+
 ## Bugs and fixes
 
 During testing, I encountered a major bug. The end game modal containing the user's final score, time and a message was showing up as the question #22 was loaded, rather than after it was answered.
