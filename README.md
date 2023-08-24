@@ -251,19 +251,19 @@ The wireframes were created using the Balsamiq software for large/medium and sma
 * Shows the user's final score and time;
 * User stories covered: 5, 6, 8;
 * Displays a message which changes depending on the user's performance:
-    1. If the user got all the questions right:
+1. If the user got all the questions right:
 
 ![End game message](documentation/readme/features/endmessage1.png)
 
-    2. If the user scored above 18:
+2. If the user scored above 18:
 
 ![End game message](documentation/readme/features/endmessage2.png)
 
-    3. If the user scored above 10:
+3. If the user scored above 10:
 
 ![End game message](documentation/readme/features/endmessage3.png)
 
-    4.  If the user scored below 10:
+ 4.  If the user scored below 10:
 
 ![End game message](documentation/readme/features/endmessage4.png)
 

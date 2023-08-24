@@ -132,6 +132,8 @@ The website was tested on the following devices:
 * Google Pixel 4a
 * iPhone XR
 
+There was no issues found.
+
 Here's screenshots of the site as viewed on selected devices:
 
 <details><summary>Xiaomi 11 Lite</summary>
@@ -514,10 +516,10 @@ This was fixed by rearranging the getNewCard() function. I moved the if statemen
 
 ### Unresolved bugs
 
-**Permission-policy bug**
+**Permission-policy error**
 
 The following bug showes up on the console: "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'".
 
 After googling it, I tried to resolve this by inserting `<meta http-equiv="Permissions-Policy" content="interest-cohort=(), user-id=()">` into the head element. Unfortunately, this did not work and caused an error being displayed when validating HTML via the W3C Markup Validation Service.
 
-This error is specific to pages hosted by services such as Github and relates to Google's FLoC (alternative to cookies) technology. Although unresolved, it does not impact the website's functionality.
+This error is specific to pages hosted by services such as Github Pages and relates to Google's FLoC (alternative to cookies) technology. Although unresolved, it does not impact the website's functionality.
