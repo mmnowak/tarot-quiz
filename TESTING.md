@@ -26,6 +26,10 @@ This is the testing documentation for the TarotQuiz website. For the full README
 
 ## Introduction
 
+I undertook manual testing throughout the website development. The testing involved manually checking if all the buttons, links and JavaScript functions were working as intended. The website was manually tested on different devices, as well as the Google Developer Tools simulator. The details of the final manual tests implemented are detailed in this document.
+
+Additionally, automated testing was performed, which included validating the HTML, CSS and JavaScript code, as well as checking the website's accessibility and performance. While all the tests were performed for both the development and deployed versions of the website throughout the process, the results outlined below are based on the [deployed page](https://mmnowak.github.io/tarot-quiz/index.html).
+
 ## Automated Testing
 
 ### HTML Validation
@@ -131,6 +135,7 @@ The website was tested on the following devices:
 * iPhone 13
 * Google Pixel 4a
 * iPhone XR
+* Google Chrome Developer Tools -  all the different device avaliable, as well as all the size options
 
 There were no issues found.
 
