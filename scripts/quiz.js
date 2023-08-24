@@ -1,5 +1,7 @@
 /*jshint esversion: 6 */
 
+// The quiz was created following a tutorial from James Q Quick - find link in the README file
+
 // Variable declarations
 const question = document.getElementById('card-question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
@@ -232,29 +234,29 @@ let questions = [
 
  // Generates a random card from the array
  function getNewCard() {
+    if (progress >= 22) {
+        progressBar.style.width = `100%`;
+        $(endModal).modal('show');} // Shows the final message, created with Bootstrap documentation
+    else {
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerHTML = currentQuestion.question;
-// Shows answers from the array
-    choices.forEach((choice) => {
+    // Updates the progress bar
+    progress++;
+    progressBar.style.width = `${(progress / 22) * 100}%`;
+    console.log(progress);
+
+    if (progress <= 22) {
+    // Shows answers from the array
+        choices.forEach((choice) => {
         const option = choice.dataset.option;
         choice.innerText = currentQuestion['choice' + option];
         choice.style.cursor = "pointer";
     });
-// Removes cards that were already shown from the array
+    // Removes cards that were already shown from the array
     availableQuestions.splice(questionIndex, 1);
     acceptingAnswers = true;
-
-// Updates the progress bar
-if (availableQuestions.length <= 22) {
-    progress++;
-    console.log(progress);
-    progressBar.style.width = `${(progress / 22) * 100}%`;
- }
-
- if (availableQuestions.length === 0 && progress === 22) {
-    progressBar.style.width = `100%`;
-    $(endModal).modal('show');} // Shows the final message, created with Bootstrap documentation
+}}
 }
 
 // Listens for clicks on the answer choices paragraphs
@@ -301,7 +303,7 @@ if (availableQuestions.length <= 22) {
   } else {console.log("error");}
 }
 
- // Shows how much time has passed since the game has started
+ // Shows how much time has passed since the game has started - created following a tutorial from Daily Dev Tips - find link in the README file
  function startTimer() {
     clearInterval(timerInterval);
     let second = 0;

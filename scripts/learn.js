@@ -65,7 +65,7 @@ function showFullMeaning(obj) {
 
 getData(showFullMeaning);}
 
-// Shows a card meaning
+// Shows a card meaning - flip card effect created with a tutorial by Marina Ferreira - link in the README file
 function flipCard() {
     cardMeanings.classList.toggle('flip');
 }
