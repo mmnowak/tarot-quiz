@@ -1,3 +1,5 @@
+/* ------------ ALL PAGES ------------ */
+
 body {
     background-color: #1D0742;
     height: auto;
@@ -7,14 +9,30 @@ body {
     backdrop-filter: blur(4px);
 }
 
+/* Keeps the footer at the bottom of the page */
 #page-container {
     position: relative;
-    min-height: 100vh;  
-    max-height: 100vh;  
+    min-height: 100vh;   
 }
 
 #content-container {
     padding-bottom: 2rem;
+}
+
+footer {
+    height: 2rem;
+    background-color: #BC943F;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    transform: scale(1.2);
 }
 
 .navbar {
@@ -35,21 +53,6 @@ body {
     text-decoration: underline;
 }
 
-footer {
-    height: 2rem;
-    background-color: #BC943F;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-}
-
-footer a {
-    color: black;
-}
-
-footer a:hover {
-    transform: scale(1.2);
-}
 
 /* ------------ GAME PAGE ------------ */
 
@@ -82,10 +85,12 @@ footer a:hover {
     border: solid 3px black;
 }
 
+/* Changes the colour of the selected answer green if correct */
 .correct {
     background-color: #48B448;
 }
 
+/* Changes the colour of the selected answer red if incorrect */
 .incorrect {
     background-color: #BB5541;
 }
@@ -182,6 +187,7 @@ footer a:hover {
 
 }
 
+/* Creates the flip effect */
 .learn-card.flip {
     transform: rotateY(180deg);
 }

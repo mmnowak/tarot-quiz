@@ -19,9 +19,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <!-- EmailJS API -->
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
     (function(){
     emailjs.init("ok74A3TGpTTklO-Hw");
     })();
@@ -47,6 +46,7 @@
     </div>
 </nav>
 
+<!-- A Bootstrap modal containing a thank you message which pops up once the form is submitted-->
 <div class="modal" id="thankyou-modal" tabindex="-1" aria-labelledby="thankyoumodalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content" id="thankyou-modal-content">
