@@ -404,3 +404,9 @@ I took the following steps to ensure the website is accessible:
 4. In a code editor, change the current working directory to the location desired for the cloned directory;
 5. Type 'git clone' into the terminal and paste the link address copied earlier;
 6. Press enter to create a local clone.
+
+I would like to express my gratitude to:
+
+* My mentor, Mo Shami, for his guidance, support and advice;
+* My peer Karolis Petrauskas who took the time to review my page and provide feedback on the Code Institute Slack.
+* Oisin from the Code Institure Tutoring team for helping me solve a major bug in the quiz.js file.
