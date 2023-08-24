@@ -9,6 +9,6 @@ setTimeout(function () {
 
 var timeLeft = 9;
 setInterval(function() {
-document.getElementById("return-timer").innerHTML = 'Redirecting in... ' + timeLeft;
-timeLeft -= 1;
+      document.getElementById("return-timer").innerHTML = 'Redirecting in... ' + timeLeft;
+      timeLeft -= 1;
 }, 1000);

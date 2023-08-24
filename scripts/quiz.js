@@ -238,29 +238,30 @@ let questions = [
         progressBar.style.width = `100%`;
         $(endModal).modal('show');} // Shows the final message, created with Bootstrap documentation
     else {
-    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
-    currentQuestion = availableQuestions[questionIndex];
-    question.innerHTML = currentQuestion.question;
-    // Updates the progress bar
-    progress++;
-    progressBar.style.width = `${(progress / 22) * 100}%`;
-    console.log(progress);
+        const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+        currentQuestion = availableQuestions[questionIndex];
+        question.innerHTML = currentQuestion.question;
+// Updates the progress bar
+        progress++;
+        progressBar.style.width = `${(progress / 22) * 100}%`;
+        console.log(progress);
 
-    if (progress <= 22) {
-    // Shows answers from the array
-        choices.forEach((choice) => {
-        const option = choice.dataset.option;
-        choice.innerText = currentQuestion['choice' + option];
-        choice.style.cursor = "pointer";
-    });
+        if (progress <= 22) {
+// Shows answers from the array
+            choices.forEach((choice) => {
+            const option = choice.dataset.option;
+            choice.innerText = currentQuestion['choice' + option];
+            choice.style.cursor = "pointer";
+            });
     // Removes cards that were already shown from the array
-    availableQuestions.splice(questionIndex, 1);
-    acceptingAnswers = true;
-}}
+            availableQuestions.splice(questionIndex, 1);
+            acceptingAnswers = true;
+        }
+    }
 }
 
 // Listens for clicks on the answer choices paragraphs
- choices.forEach((choice) => {
+choices.forEach((choice) => {
     choice.addEventListener("click", e => {
         if (!acceptingAnswers) return;
 
@@ -269,7 +270,7 @@ let questions = [
         const selectedAnswer = selectedChoice.dataset.option;
 
 // Adds a colour class indicating whether the answer was correct or incorrect
-        const classToApply =
+        const classToApply = 
       selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
       selectedChoice.classList.add(classToApply);
@@ -280,7 +281,7 @@ let questions = [
       setTimeout(() => {
             selectedChoice.classList.remove(classToApply);
         getNewCard();
-    }, 600);
+        }, 600);
     });
  });
 
@@ -289,18 +290,19 @@ let questions = [
     score += num;
     scoreCount.innerText = score + '/22';
 
-    document.getElementById("final-score").innerText = 'You scored ' + score + ' out of 22'; // Displays the final score in the pop up modal
+// Displays the final score in the pop up modal
+    document.getElementById("final-score").innerText = 'You scored ' + score + ' out of 22';
 
  // Displays a message in the end modal
- if (score === 22) {
-    endMessage.innerText = "You got all of the questions right! Well done, you have mastered the Major Arcana!";
-  } else if (score > 18 && score < 22) {
-    endMessage.innerText = "Well done! You're a master of the Major Arcana. Why not play again to see if you can get all the questions right?";
-  } else if (score > 10 && score <= 18) {
-    endMessage.innerText = 'You are quite good! Try again or press "Learn Tarot" to practise memorizing the meanings using the flashcards.';
-  } else if (score <= 10) {
-    endMessage.innerText = 'Plenty of room for improvement! Try again or press "Learn Tarot" to practise memorizing the meanings using the flashcards.';
-  } else {console.log("error");}
+    if (score === 22) {
+        endMessage.innerText = "You got all of the questions right! Well done, you have mastered the Major Arcana!";
+    } else if (score > 18 && score < 22) {
+        endMessage.innerText = "Well done! You're a master of the Major Arcana. Why not play again to see if you can get all the questions right?";
+    } else if (score > 10 && score <= 18) {
+        endMessage.innerText = 'You are quite good! Try again or press "Learn Tarot" to practise memorizing the meanings using the flashcards.';
+    } else if (score <= 10) {
+        endMessage.innerText = 'Plenty of room for improvement! Try again or press "Learn Tarot" to practise memorizing the meanings using the flashcards.';
+    } else {console.log("error");}
 }
 
  // Shows how much time has passed since the game has started - created following a tutorial from Daily Dev Tips - find link in the README file
@@ -310,18 +312,18 @@ let questions = [
     let minute = 0;
 
     timerInterval = setInterval(function () {
-    timer.innerHTML =  (minute < 10 ? '0' + minute : minute) +
-    ':' +
-    (second < 10 ? '0' + second : second);
-    second++;
-    if (second == 60) {
-        minute++;
-        second = 0;
-    }
-    if (availableQuestions.length === 0) {
-        clearInterval(timerInterval);
-        document.getElementById("final-time").innerText = "in " + minute + " minutes and " + second + " seconds!";
-    } // Stops the timer once all the questions have been answered and displays the final time in the end game modal
+        timer.innerHTML =  (minute < 10 ? '0' + minute : minute) + ':' +
+        (second < 10 ? '0' + second : second);
+        second++;
+        if (second == 60) {
+            minute++;
+            second = 0;
+        }
+    // Stops the timer once all the questions have been answered and displays the final time in the end game modal
+        if (availableQuestions.length === 0) {
+            clearInterval(timerInterval);
+            document.getElementById("final-time").innerText = "in " + minute + " minutes and " + second + " seconds!";
+        } 
     }, 1000); 
  }
 

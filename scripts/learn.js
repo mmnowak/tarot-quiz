@@ -57,13 +57,13 @@ function showCard() {
     cardMeanings.innerHTML = currentCard;
 
 // Shows the full meaning of a card retreived from tarot_api (see more in the README file)
-function showFullMeaning(obj) {
-    cards.forEach(function callback(card, index) {
-    document.getElementById("fullmeaning").innerText = obj[cardIndex].full_meaning;
-});
+    function showFullMeaning(obj) {
+        cards.forEach(function callback(card, index) {
+        document.getElementById("fullmeaning").innerText = obj[cardIndex].full_meaning;
+        });
+    }
+    getData(showFullMeaning);
 }
-
-getData(showFullMeaning);}
 
 // Shows a card meaning - flip card effect created with a tutorial by Marina Ferreira - link in the README file
 function flipCard() {
