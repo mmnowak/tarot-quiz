@@ -47,12 +47,15 @@
     </div>
 </nav>
 
-<div class="modal fade" id="thankyou-modal" tabindex="-1" aria-labelledby="thankyoumodalLabel" aria-hidden="true">
+<div class="modal" id="thankyou-modal" tabindex="-1" aria-labelledby="thankyoumodalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title ms-auto" id="thankyoumodalLabel">Thank you for submitting your message!</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-content" id="thankyou-modal-content">
+        <div class="modal-header text-center">
+          <h1 class="modal-title ms-auto" id="thankyoumodalLabel">Thank you!</h1>
+          <button type="button" class="btn-close mt-0" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center p-5">
+          <h2>Your message has been submitted.</h2>
         </div>
       </div>
     </div>

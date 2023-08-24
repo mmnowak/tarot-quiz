@@ -270,6 +270,12 @@ footer a:hover {
     background-color: rgba(231,208,106, 1);
 }
 
+#thankyou-modal-content {
+    background-color: rgba(231,208,106,1);
+    color: black;
+    font-size: x-large;
+}
+
 /* ------------ 404 PAGE ------------ */
 
 #error-message {

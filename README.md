@@ -301,13 +301,23 @@ This method was chosen mostly due to the fact that the API documentation only fe
 
 ### Contact Page
 
-* Features a contact form which allows the user to contact the page owner with any questions or feedback;
+#### Contact form
+
+* Allows the user to contact the page owner with any questions or feedback;
 * All fields are mandatory;
+* The email field must contain the @ symbol.
 * The font labels are used to allow access for screen readers; they are hidden from display as the input required is already indicated by the placeholder text.
 * Uses EmailJS API to send emails;
 * User stories covered: 9.
 
 ![Contact form](documentation/readme/features/contact.png)
+
+#### Thank you message
+
+* Is displayed once the user has submitted the message;
+* Confirms that the message was sent, thus creating a positive user experience.
+
+![Thank you message](documentation/readme/features/thankyoumsg.png)
 
 ### 404 Page
 
