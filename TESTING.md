@@ -126,6 +126,7 @@ The website was tested on the following devices:
 
 * Lenovo Yoga 460
 * Xiaomi 11 Lite
+* Ipad 5gen ver iPadOS 16.6
 
 Here's screenshots of the site as viewed on selected devices:
 
@@ -428,11 +429,21 @@ Contact Page:
 | Navigation bar links | Opens correct pages when clicked | Clicked on the links | Links open correctly | Pass |
 | Navigation bar logo | Opens the index page when clicked | Clicked on the logo | Directs to the index page | Pass |
 | Footer | Appears on all pages, is at the bottom of the page | Tested on various device sizes and browser | Appears correctly | Pass |
-| Console | No errors appear | Tested all the pages via Google Dev Toold | No errors are logged | Pass |
+| Console | No errors appear | Tested all the pages via Google Dev Toold | No errors are logged other than the Permission Policy Error, [read more here](#unresolved-bugs) | Pass |
+
+**Index Page**
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Index Pages | Text appears as expected | Loading the index page | Text appears as expected | Pass |
 
 
 
 ## Bugs and fixes
+
+### Solved bugs
+
+**End game modal bug**
 
 During testing, I encountered a major bug. The end game modal containing the user's final score, time and a message was showing up as the question #22 was loaded, rather than after it was answered.
 
@@ -441,3 +452,13 @@ During testing, I encountered a major bug. The end game modal containing the use
 This was fixed by rearranging the getNewCard() function. I moved the if statement checking for the progress to the beggining of the function. Now the function checks if the progress equals or is bigger than 22 first and displays the modal if this condition is met. The rest of the function is enclosed in the 'else' part of the if statement.
 
 ![Snippet of the code after the bug was fixed](documentation/testing/bugafter.png)
+
+### Unresolved bugs
+
+**Permission-policy bug**
+
+The following bug showes up on the console: "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'".
+
+After googling it, I tried to resolve this by inserting `<meta http-equiv="Permissions-Policy" content="interest-cohort=(), user-id=()">` into the head element. Unfortunately, this did not work and caused an error being displayed when validating HTML via the W3C Markup Validation Service.
+
+This error is specific to pages hosted by services such as Github and relates to Google's FLoC (alternative to cookies) technology. Although unresolved, it does not impact the website's functionality.

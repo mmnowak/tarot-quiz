@@ -406,6 +406,14 @@ I took the following steps to ensure the website is accessible:
 5. Type 'git clone' into the terminal and paste the link address copied earlier;
 6. Press enter to create a local clone.
 
+### EmailJS
+1. Create an account at [emailjs.com](https://www.emailjs.com/);
+2. Click on Account in the option bar on the left and note your Public Key;
+3. Click on Email Services and create a service, note the id;
+4. Click on Email Templates and create a template, note the id;
+5. Update the script in the head element of the contact.html page with your Public Key.
+6. Update the email.js file with your service id and email template id.
+
 ## Acknowledgements
 
 I would like to express my gratitude to:
