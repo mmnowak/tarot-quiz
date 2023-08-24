@@ -44,7 +44,7 @@ The main purpose of this project is to create a user-friendly website dedicated 
 2. A clean design that catches the eye.
 3. A website that looks good and responds correctly on all device sizes.
 4. A website that is accessible to all users.
-5. A quiz game that displays all questions and answer correctly.
+5. A quiz game that displays all questions and answers correctly.
 6. Interactivity - including a timer, a progress bar and a score display.
 7. Easy access for the user to contact the site owner.
 
@@ -53,7 +53,7 @@ The main purpose of this project is to create a user-friendly website dedicated 
 ### Target Audience
 
 * People interested in learning more about Tarot;
-* Tarot begginers and intermediate users;
+* Tarot beginners and intermediate users;
 * People interested in spirituality and psychology;
 * Visual learners;
 
@@ -62,7 +62,7 @@ The main purpose of this project is to create a user-friendly website dedicated 
 * Links and buttons that work as expected.
 * A simple and intuitive navigation system.
 * Interactive feedback and notifications.
-* Information presented in clear and concise manner.
+* Information presented in a clear and concise manner.
 * Visually appealing design.
 * Easy way to submit questions and feedback.
 * Accessibility.
@@ -83,7 +83,7 @@ The main purpose of this project is to create a user-friendly website dedicated 
 9.	As a returning user, I want to be able to contact the page owners with any feedback I might have.
 10.	As a returning user, I want to find out the full meaning of each card.
 11.	As a returning user, I want to be able to navigate the website easily.
-12. As the returning user, I want to be able to view the site on a range of device sizes.
+12. As a returning user, I want to be able to view the site on a range of device sizes.
 13. As a returning user, I want to be able to easily find my way back if I encounter an error page.
 
 ## Design
@@ -104,7 +104,7 @@ The font used throughout the website is [Josefin Sans](https://fonts.google.com/
 
 ### Imagery
 
-The background image remains the same throughout the website. It is a vector image of moon and stars. The image is intended to be associated with magic, mysticism and whimsy.
+The background image remains the same throughout the website. It is a vector image of the moon and stars. The image is intended to be associated with magic, mysticism and whimsy.
 
 ![Vector image of moon and stars](documentation/readme/smallbackground.jpg)
 
@@ -142,7 +142,7 @@ The wireframes were created using the Balsamiq software for large/medium and sma
 
 * Featured on all pages;
 * Fully responsive, collapses into a toggler burger menu on small devices;
-* Features a logo which leads to index page when clicked, and links to Index Page, Game Page, Learn Page and Contact Page;
+* Features a logo which leads to the index page when clicked, and links to the Index Page, Game Page, Learn Page and Contact Page;
 * The links are underscored on hover;
 * User stories covered: 11, 12.
 
@@ -170,7 +170,7 @@ The wireframes were created using the Balsamiq software for large/medium and sma
 
 #### Index Text
 
-* Contains a heading level 1 to make it more accesible to screen readers;
+* Contains a heading level 1 to make it more accessible to screen readers;
 * Brief paragraph introducing the tarot and the major arcana;
 * Fully responsive;
 * User stories covered: 1.
@@ -179,13 +179,13 @@ The wireframes were created using the Balsamiq software for large/medium and sma
 
 #### Buttons
 
-* Call-to-action buttons leading to either tha Game page or the Learn Page;
+* Call-to-action buttons leading to either the Game page or the Learn Page;
 * Colour change on hover;
 * User stories covered: 11.
 
 ![Buttons on the index page](documentation/readme/features/indexbuttons.png)
 
-#### How to play Button
+#### How to Play Button
 
 * Displays a How to Play Modal when clicked;
 * Colour change on hover;
@@ -232,7 +232,7 @@ The wireframes were created using the Balsamiq software for large/medium and sma
 #### Game section
 
 * Displays a random card from the array along with four answer choices;
-* One answer is correct, the other three are incorect;
+* One answer is correct and the other three are incorrect;
 * The correct answer turns green if clicked;
 
 ![Correct answer](documentation/readme/features/corectanswer.png)
@@ -274,7 +274,7 @@ The wireframes were created using the Balsamiq software for large/medium and sma
 
 * Displays a random card from an array;
 * When clicked, a flip effect is shown;
-* When flipped, a card's meaning key words from the quiz are shown.
+* When flipped, a card's meaning keywords from the quiz are shown.
 
 ![Tarot card being flipped](documentation/readme/features/flipcard.gif)
 
@@ -282,7 +282,7 @@ The wireframes were created using the Balsamiq software for large/medium and sma
 
 * The full meaning of each card is obtained from Tarot API by howlCode. For the purpose of this website, only the JSON file containing the tarot cards was needed, hence it is being called in the following way:
 ![Code used to get data from Tarot API](documentation/readme/features/tarotapi2.png)
-This method was chosen mostly due to the fact that the API documentation only features a localhost url and the whole API repository would have to be cloned otherwise which was not necessary for this particular project;
+This method was chosen mostly due to the fact that the API documentation only features a localhost URL and the whole API repository would have to be cloned otherwise which was not necessary for this particular project;
 * The cards in the array are in the same order as the Major Arcana cards in the Tarot API JSON file (the order of the cards array had to be changed slightly to match). As each card is displayed, a full_meaning variable is being called from the JSON file. The cards from the cards array and from the JSON file are matched by their index number using the cardIndex variable;
 ![Code used to display the cards' full meaning](documentation/readme/features/tarotapi1.png)
 * The full meaning of each card is then displayed in a Bootstrap modal which pops up when the Full Meaning button is clicked;
@@ -306,7 +306,7 @@ This method was chosen mostly due to the fact that the API documentation only fe
 * Allows the user to contact the page owner with any questions or feedback;
 * All fields are mandatory;
 * The email field must contain the @ symbol.
-* The font labels are used to allow access for screen readers; they are hidden from display as the input required is already indicated by the placeholder text.
+* The font labels are used to allow access for screen readers; they are hidden from the display as the input required is already indicated by the placeholder text.
 * Uses EmailJS API to send emails;
 * User stories covered: 9.
 
@@ -324,7 +324,7 @@ This method was chosen mostly due to the fact that the API documentation only fe
 * The 404 page has the same design as the other pages, so the user feels like they haven't left the website;
 * It features a Go Back Home button which leads back to the Index page;
 * It redirects the user back to the Index page automatically after 10 seconds;
-* A countdown timer is displayed so the user knows to expect being redirected and when it is going to happen. 
+* A countdown timer is displayed so the user knows to expect to be redirected and when it is going to happen. 
 * User stories covered: 11, 13.
 
 ![404 Page](documentation/readme/features/errorpage.gif)
@@ -333,9 +333,9 @@ This method was chosen mostly due to the fact that the API documentation only fe
 
 I took the following steps to ensure the website is accessible:
 
-* Used aria-labels for icons to to enable screen readers to understand them.
+* Used aria-labels for icons to enable screen readers to understand them.
 * Used aria-current to indicate the current page for screen readers.
-* Provided all card images with alternative description.
+* Provided all card images with alternative descriptions.
 * Used a sans serif font to ensure the website is dyslexia-friendly.
 * Used a contrast checker to ensure there is sufficient contrast between background and foreground colours.
 
@@ -364,7 +364,7 @@ I took the following steps to ensure the website is accessible:
 
 ## Testing and Bugs
 
-[See TESTING.md for full breakdown of testing and bugs](https://github.com/mmnowak/tarot-quiz/blob/main/TESTING.md)
+[See TESTING.md for a full breakdown of testing and bugs](https://github.com/mmnowak/tarot-quiz/blob/main/TESTING.md)
 
 ## Credits
 
@@ -384,11 +384,13 @@ I took the following steps to ensure the website is accessible:
 
 * The email.js file was created from the [EmailJS API documentation](https://www.emailjs.com/)
 
+* The footer was positioned at the bottom with the help of [Free Code Camp](https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/)
+
 ### Content
 
-* The card meaning key words used in the quiz and on the flashcards were taken from [Biddy Tarot](https://www.biddytarot.com/tarot-card-meanings/major-arcana/)
+* The card meaning keywords used in the quiz and on the flashcards were taken from [Biddy Tarot](https://www.biddytarot.com/tarot-card-meanings/major-arcana/)
 
-* The full card meanings are retreived from the [Tarot API by howlCode](https://github.com/howlCode/tarot_api)
+* The full card meanings are retrieved from the [Tarot API by howlCode](https://github.com/howlCode/tarot_api)
 
 * The remaining content was written by Martyna Nowak
 
@@ -398,7 +400,7 @@ I took the following steps to ensure the website is accessible:
 2. Click on the Settings button;
 3. Select Pages;
 4. Select Source: Deploy from a branch and Branch: main / root;
-5. Click Save and find your deployed website at an address shown on top of the page.
+5. Click Save and find your deployed website at the address shown at the top of the page.
 
 ### Local Development
 
@@ -429,6 +431,6 @@ I took the following steps to ensure the website is accessible:
 I would like to express my gratitude to:
 
 * My mentor, Mo Shami, for his guidance, support and advice;
-* My peer Karolis Petrauskas who took the time to review my page and provide feedback on the Code Institute Slack.
-* Oisin from the Code Institure Tutoring team for helping me solve a major bug in the quiz.js file.
+* My peer Karolis Petrauskas, who took the time to review my page and provide feedback on the Code Institute Slack.
+* Oisin from the Code Institute Tutoring team for helping me solve a major bug in the quiz.js file.
 * My friends and family for testing the website on their devices.

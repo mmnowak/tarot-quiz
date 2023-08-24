@@ -91,7 +91,7 @@ See scores:
 
 [404.html](https://wave.webaim.org/report#/https://mmnowak.github.io/tarot-quiz/404.html)
 
-All the alerts refer to either a redundant link in the navigation bar (both HOME link and the site name lead to the index page when clicked on) or missing h1 heading on the game page.
+All the alerts refer to either a redundant link in the navigation bar (both the HOME link and the site name lead to the index page when clicked on) or a missing h1 heading on the game page.
 
 
 ### Performance
@@ -132,9 +132,9 @@ The website was tested on the following devices:
 * Google Pixel 4a
 * iPhone XR
 
-There was no issues found.
+There were no issues found.
 
-Here's screenshots of the site as viewed on selected devices:
+Here are screenshots of the site as viewed on selected devices:
 
 <details><summary>Xiaomi 11 Lite</summary>
 
@@ -353,7 +353,7 @@ Contact Page:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |:-----------:|:----------:|:-------------------:|:-----------------:|
-| Modal | Answer all the question | The end game modal displays the final score, time and a message relevant to user performance | Works as expected |
+| Modal | Answer all the questions | The end game modal displays the final score, time and a message relevant to user performance | Works as expected |
 
 <details><summary>See more</summary>
 <img src="documentation/testing/user-testing/us6.gif">
@@ -400,7 +400,7 @@ Contact Page:
 </details>
 
 ---
-12. As the returning user, I want to be able to view the site on a range of device sizes.
+12. As a returning user, I want to be able to view the site on a range of device sizes.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |:-----------:|:----------:|:-------------------:|:-----------------:|
@@ -434,10 +434,10 @@ Contact Page:
 | Navigation bar | Appears on all pages, collapses into a hamburger menu on smaller devices | Tested on various device sizes and browsers | Appears correctly | Pass |
 | Navigation bar links | Opens correct pages when clicked | Clicked on the links | Links open correctly | Pass |
 | Navigation bar logo | Opens the index page when clicked | Clicked on the logo | Directs to the index page | Pass |
-| Footer | Appears on all pages, is at the bottom of the page | Tested on various device sizes and browser | Appears correctly | Pass |
+| Footer | Appears on all pages, is at the bottom of the page | Tested on various device sizes and browsers | Appears correctly | Pass |
 | Footer Social Links | Correct links open in a new tab when clicked | Click on the icons | Work correctly | Pass |
 | Footer Social Links | Increase in size on hover | Hover on icons | Work correctly | Pass |
-| Console | No errors appear | Tested all the pages via Google Dev Toold | No errors are logged other than the Permission Policy Error, [read more here](#unresolved-bugs) | Pass |
+| Console | No errors appear | Tested all the pages via Google Dev Tools | No errors are logged other than the Permission Policy Error, [read more here](#unresolved-bugs) | Pass |
 
 **Index Page**
 
@@ -458,7 +458,7 @@ Contact Page:
 | Correct answers | Answer container turns green if correct | Click on the correct answer | The answer turns green ![Correct answer](documentation/readme/features/corectanswer.png) | Pass |
 | Incorrect answers | Answer container turns red if incorrect | Click on the correct answer | The answer turns red ![Incorrect answer](documentation/readme/features/incorrectanswer.png) | Pass |
 | Game | A new question is loaded after the answer is selected | Select answer | Progress onto the next question | Pass |
-| Score count | The score count increases by 1 everytime a correct answer is selected | Click on the correct answer | The score increases by 1 ![Score](documentation/testing/user-testing/us5.gif) | Pass |
+| Score count | The score count increases by 1 every time a correct answer is selected | Click on the correct answer | The score increases by 1 ![Score](documentation/testing/user-testing/us5.gif) | Pass |
 | Timer | The timer starts as the game is loaded | Load the game.html page | The timer starts ![Timer](documentation/readme/features/timergif.gif) | Pass |
 | Timer | The timer pauses as the game is finished | Play until the end | The timer stops | Pass |
 | Progress bar | The bar increases after each question is loaded | Play the game | The progress bar increases ![Progress bar](documentation/testing/user-testing/us3.gif) | Pass |
@@ -485,7 +485,7 @@ Contact Page:
 | --- | --- | --- | --- | --- |
 | Contact Form | The form is displayed correctly | Load the page | The form appears | Pass |
 | Required fields | Submitting a form with empty fields is disabled | Try to submit the form with empty fields | A "Please fill out this field" message appears | Pass |
-| Email required | Submitting a form with invalid email address is disabled | Try to submit the form with the email address missing the '@' symbol | A "Please include an '@' in the email address" message appears | Pass |
+| Email required | Submitting a form with an invalid email address is disabled | Try to submit the form with the email address missing the '@' symbol | A "Please include an '@' in the email address" message appears | Pass |
 | Submit form | Sends the email correctly | Click the Send button; see a SUCCESS message being logged onto the console | Email sends correctly | Pass |
 | Thank you message | A Thank You modal appears when the form is submitted | Submit the form | A Thank You message appears ![Thank you message](documentation/readme/features/thankyoumessage.gif) | Pass |
 
@@ -504,13 +504,17 @@ Contact Page:
 
 ### Solved bugs
 
+**Footer not staying at the bottom**
+
+The footer would not stay at the bottom regardless of the `bottom: 0` and `margin-bottom: 0` properties; adding a `sticky-bottom` or `fixed-bottom` caused it to obscure the main content, especially when viewed on a small screen. This was solved by enclosing both the page and the footed in a `id="page-container"` div with a property `position: relative`, giving the footer a property `position: absolute` and then enclosing the page content into a `#content-container` div with a `padding-bottom` property set to the same height as the footer. 
+
 **End game modal bug**
 
-During testing, I encountered a major bug. The end game modal containing the user's final score, time and a message was showing up as the question #22 was loaded, rather than after it was answered.
+During testing, I encountered a major bug. The end game modal containing the user's final score, time and a message was showing up as question #22 was loaded, rather than after it was answered.
 
 ![Snippet of the code before the bug was fixed](documentation/testing/bugbefore.png)
 
-This was fixed by rearranging the getNewCard() function. I moved the if statement checking for the progress to the beggining of the function. Now the function checks if the progress equals or is bigger than 22 first and displays the modal if this condition is met. The rest of the function is enclosed in the 'else' part of the if statement.
+This was fixed by rearranging the getNewCard() function. I moved the if statement checking for the progress to the beginning of the function. Now the function checks if the progress equals or is bigger than 22 first and displays the modal if this condition is met. The rest of the function is enclosed in the 'else' part of the if statement.
 
 ![Snippet of the code after the bug was fixed](documentation/testing/bugafter.png)
 
@@ -518,8 +522,8 @@ This was fixed by rearranging the getNewCard() function. I moved the if statemen
 
 **Permission-policy error**
 
-The following bug showes up on the console: "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'".
+The following bug shows up on the console: "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'".
 
-After googling it, I tried to resolve this by inserting `<meta http-equiv="Permissions-Policy" content="interest-cohort=(), user-id=()">` into the head element. Unfortunately, this did not work and caused an error being displayed when validating HTML via the W3C Markup Validation Service.
+After googling it, I tried to resolve this by inserting `<meta http-equiv="Permissions-Policy" content="interest-cohort=(), user-id=()">` into the head element. Unfortunately, this did not work and caused an error to be displayed when validating HTML via the W3C Markup Validation Service.
 
 This error is specific to pages hosted by services such as Github Pages and relates to Google's FLoC (alternative to cookies) technology. Although unresolved, it does not impact the website's functionality.
