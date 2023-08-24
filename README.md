@@ -134,6 +134,10 @@ The wireframes were created using the Balsamiq software for large/medium and sma
 <img src="documentation/readme/wireframes/wireframemobile4.png">
 </details>
 
+<details><summary>404 Page</summary>
+<img src="documentation/readme/wireframes/wireframe5.png">
+</details>
+
 ## Features
 
 ### All Pages
