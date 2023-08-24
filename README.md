@@ -140,15 +140,29 @@ The wireframes were created using the Balsamiq software for large/medium and sma
 
 #### Navigation Bar
 
+* Featured on all pages;
+* Fully responsive, collapses into a toggler burger menu on small devices;
+* Features a logo which leads to index page when clicked, and links to Index Page, Game Page, Learn Page and Contact Page;
+* The links are underscored on hover;
+* User stories covered: 11, 12.
+
 ![Navigation bar](documentation/readme/features/navbar.png)
 
 ![Hamburger menu navigation bar](documentation/readme/features/navbarcollapsed.png)
 
 #### Footer
 
+* Featured on all pages;
+* Contains credits to the page developer and relevant social links;
+* The social links icons have aria labels to make them accessible to screen readers.
+* User stories covered: 9.
+
 ![Footer](documentation/readme/features/footer.png)
 
 #### Favicon
+
+* The favicon was generated based on the background image;
+* Displays in the user's browser tab for all the pages.
 
 ![Favicon](documentation/readme/features/favicon.png)
 
@@ -156,73 +170,153 @@ The wireframes were created using the Balsamiq software for large/medium and sma
 
 #### Index Text
 
-![alt text](documentation/readme/features/indextext.png)
+* Contains a heading level 1 to make it more accesible to screen readers;
+* Brief paragraph introducing the tarot and the major arcana;
+* Fully responsive;
+* User stories covered: 1.
+
+![Text on the index page](documentation/readme/features/indextext.png)
 
 #### Buttons
 
-![alt text](documentation/readme/features/indexbuttons.png)
+* Call-to-action buttons leading to either tha Game page or the Learn Page;
+* Colour change on hover;
+* User stories covered: 11.
+
+![Buttons on the index page](documentation/readme/features/indexbuttons.png)
 
 #### How to play Button
 
-![alt text](documentation/readme/features/howtobutton.png)
+* Displays a How to Play Modal when clicked;
+* Colour change on hover;
+* User stories covered: 1, 2, 11.
+
+![How to play button](documentation/readme/features/howtobutton.png)
 
 #### How to play Modal
 
-![alt text](documentation/readme/features/howtomodal.png)
+* A modal created with Bootstrap;
+* Displays the game instructions;
+* User stories covered: 2.
+
+![How to play modal](documentation/readme/features/howtomodal.png)
 
 ### Quiz Page
 
 #### Progress Bar
 
-![alt text](documentation/readme/features/progressbar.png)
+* Shows how far along the user is in the game;
+* Updates every time a new card is displayed;
+* Fully responsive;
+* User stories covered: 3.
+
+![Progress bar](documentation/readme/features/progressbar.png)
 
 #### Timer
 
-![alt text](documentation/readme/features/timer.png)
+* Starts when the game is loaded;
+* Measures time in seconds and minutes;
+* Stops once the End Game Modal is displayed;
+* User stories covered: 6.
+
+![Timer](documentation/readme/features/timer.png)
 
 #### Score
 
-![alt text](documentation/readme/features/score.png)
+* Displays the user's score;
+* Increases by 1 if the answer selected is correct;
+* User stories covered: 4, 5, 6.
 
-#### Game
+![Score](documentation/readme/features/score.png)
 
-![alt text](documentation/readme/features/game.png)
+#### Game section
 
-##### Correct Choice
+* Displays a random card from the array along with four answer choices;
+* One answer is correct, the other three are incorect;
+* The correct answer turns green if clicked;
 
-![alt text](documentation/readme/features/corectanswer.png)
+![Correct answer](documentation/readme/features/corectanswer.png)
 
-##### Incorrect Choice
+* The incorrect answers turn red if clicked;
 
-![alt text](documentation/readme/features/incorrectanswer.png)
+![Incorrect answer](documentation/readme/features/incorrectanswer.png)
+
+* Loads the next card once the answer is selected by the user.
+
+![Game section](documentation/readme/features/game.png)
 
 #### End Message
+
+* Displays at the end of the game;
+* Shows the user's final score and time;
+* User stories covered: 5, 6, 8;
+* Displays a message which changes depending on the user's performance:
+    1. If the user got all the questions right:
+
+![End game message](documentation/readme/features/endmessage1.png)
+
+    2. If the user scored above 18:
+
+![End game message](documentation/readme/features/endmessage2.png)
+
+    3. If the user scored above 10:
+
+![End game message](documentation/readme/features/endmessage3.png)
+
+    4.  If the user scored below 10:
+
+![End game message](documentation/readme/features/endmessage4.png)
+
 
 ### Learn Page
 
 #### Flashcards
 
-![alt text](documentation/readme/features/flipcard.gif)
+* Displays a random card from an array;
+* When clicked, a flip effect is shown;
+* When flipped, a card's meaning key words from the quiz are shown.
+
+![Tarot card being flipped](documentation/readme/features/flipcard.gif)
 
 #### Full Meaning Button and Modal
 
-![alt text](documentation/readme/features/fullmeaning.gif)
+* The full meaning of each card is obtained from Tarot API by howlCode. For the purpose of this website, only the JSON file containing the tarot cards was needed, hence it is being called in the following way:
+![Code used to get data from Tarot API](documentation/readme/features/tarotapi2.png)
+This method was chosen mostly due to the fact that the API documentation only features a localhost url and the whole API repository would have to be cloned otherwise which was not necessary for this particular project;
+* The cards in the array are in the same order as the Major Arcana cards in the Tarot API JSON file (the order of the cards array had to be changed slightly to match). As each card is displayed, a full_meaning variable is being called from the JSON file. The cards from the cards array and from the JSON file are matched by their index number using the cardIndex variable;
+![Code used to display the cards' full meaning](documentation/readme/features/tarotapi1.png)
+* The full meaning of each card is then displayed in a Bootstrap modal which pops up when the Full Meaning button is clicked;
+* User stories covered: 10.
 
-![alt text](documentation/readme/features/tarotapi1.png)
-
-![alt text](documentation/readme/features/tarotapi2.png)
+![Full meaning function](documentation/readme/features/fullmeaning.gif)
 
 #### Next Card Button
 
-![alt text](documentation/readme/features/nextcard.gif)
+* Displays a random card from the array to help memorise the cards' meanings;
+* A splice function was previously used so each card was being shown only once per deck. This had to be removed to enable the incorporation of the full meanings from Tarot API, as each card's index number has to match the index numbers from the Tarot API JSON file. Thus, cards are being shown at complete random and can appear more than once in a row;
+* The button changes colour on hover;
+* User stories covered: 11.
+
+![Next card button](documentation/readme/features/nextcard.gif)
 
 ### Contact Page
 
-![alt text](documentation/readme/features/contact.png)
+* Features a contact form which allows the user to contact the page owner with any questions or feedback;
+* All fields are mandatory;
+* Uses EmailJS API to send emails;
+* User stories covered: 9.
+
+![Contact form](documentation/readme/features/contact.png)
 
 ### 404 Page
 
-![alt text](documentation/readme/features/errorpage.gif)
+* The 404 page has the same design as the other pages, so the user feels like they haven't left the website;
+* It features a Go Back Home button which leads back to the Index page;
+* It redirects the user back to the Index page automatically after 10 seconds;
+* A countdown timer is displayed so the user knows to expect being redirected and when it is going to happen. 
+* User stories covered: 11, 13.
+
+![404 Page](documentation/readme/features/errorpage.gif)
 
 ### Accessibility
 
