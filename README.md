@@ -431,3 +431,4 @@ I would like to express my gratitude to:
 * My mentor, Mo Shami, for his guidance, support and advice;
 * My peer Karolis Petrauskas who took the time to review my page and provide feedback on the Code Institute Slack.
 * Oisin from the Code Institure Tutoring team for helping me solve a major bug in the quiz.js file.
+* My friends and family for testing the website on their devices.

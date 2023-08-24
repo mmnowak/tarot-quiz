@@ -126,7 +126,11 @@ The website was tested on the following devices:
 
 * Lenovo Yoga 460
 * Xiaomi 11 Lite
-* Ipad 5gen ver iPadOS 16.6
+* iPad 5gen ver iPadOS 16.6
+* iPhone 14 Pro
+* iPhone 13
+* Google Pixel 4a
+* iPhone XR
 
 Here's screenshots of the site as viewed on selected devices:
 
@@ -429,15 +433,70 @@ Contact Page:
 | Navigation bar links | Opens correct pages when clicked | Clicked on the links | Links open correctly | Pass |
 | Navigation bar logo | Opens the index page when clicked | Clicked on the logo | Directs to the index page | Pass |
 | Footer | Appears on all pages, is at the bottom of the page | Tested on various device sizes and browser | Appears correctly | Pass |
+| Footer Social Links | Correct links open in a new tab when clicked | Click on the icons | Work correctly | Pass |
+| Footer Social Links | Increase in size on hover | Hover on icons | Work correctly | Pass |
 | Console | No errors appear | Tested all the pages via Google Dev Toold | No errors are logged other than the Permission Policy Error, [read more here](#unresolved-bugs) | Pass |
 
 **Index Page**
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| Index Pages | Text appears as expected | Loading the index page | Text appears as expected | Pass |
+| Index Page | Text appears as expected | Loading the index page | Text appears as expected | Pass |
+| Index Page Buttons | Button text changes colour on hover | Hover on the index buttons | Text colour changes | Pass |
+| How to Play button | A modal pops up | Click on the button | The modal appears as expected | Pass |
+| Play Button | Directs to the game.html page | Click on the button | The Game page opens | Pass |
+| Learn Button | Directs to the learn.html page | Click on the button | The Learn page opens | Pass |
+
+**Quiz Page**
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Question Picture | Displays a random Tarot card | Load the page; progress onto the next question; go through each card | All cards displaying correctly | Pass |
+| Answer options | Displays four possible answers | Load the page; progress onto the next question; go through each card | The answers displaying correctly for each card | Pass |
+| Correct answers | Answer container turns green if correct | Click on the correct answer | The answer turns green ![Correct answer](documentation/readme/features/corectanswer.png) | Pass |
+| Incorrect answers | Answer container turns red if incorrect | Click on the correct answer | The answer turns red ![Incorrect answer](documentation/readme/features/incorrectanswer.png) | Pass |
+| Game | A new question is loaded after the answer is selected | Select answer | Progress onto the next question | Pass |
+| Score count | The score count increases by 1 everytime a correct answer is selected | Click on the correct answer | The score increases by 1 ![Score](documentation/testing/user-testing/us5.gif) | Pass |
+| Timer | The timer starts as the game is loaded | Load the game.html page | The timer starts ![Timer](documentation/readme/features/timergif.gif) | Pass |
+| Timer | The timer pauses as the game is finished | Play until the end | The timer stops | Pass |
+| Progress bar | The bar increases after each question is loaded | Play the game | The progress bar increases ![Progress bar](documentation/testing/user-testing/us3.gif) | Pass |
+| End Game Modal | The modal pops up once all the questions are answered | Play until the end | The modal pops up ![Modal](documentation/testing/user-testing/us6.gif) | Pass |
+| End Game Modal | The modal displays the correct final score and time | Play until the end | The modal displays correct stats | Pass |
+| End Game Modal | The modal message changes depending on user score | Play until the end | The message changes depending on the final score (see [README](README.md) file) | Pass |
+| Play Again Button | The game restarts once the button is clicked | Click the button | The game restarts ![Example](documentation/testing/user-testing/us11ca.gif) | Pass |
+| Learn Tarot Button | Directs to the Learn.html page | Click the button | The Learn.html page is loaded ![Example](documentation/testing/user-testing/us11cb.gif) | Pass |
 
 
+**Learn Page**
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Show card function | A random card is loaded | Load the page | A card appears | Pass |
+| Next card button | A random card is loaded | Click the button | A card appears ![Next card button](documentation/readme/features/nextcard.gif) | Pass |
+| Flip card function | The card flips when clicked; the meaning keywords are displayed | Click on a card | The meaning keywords are revealed ![Flip card function](documentation/readme/features/flipcard.gif) | Pass |
+| Full Meaning button | A modal containing each card full meaning appears | Click on the button; test every card | The correct full meaning displays correctly for each card ![Full meaning button](documentation/readme/features/fullmeaning.gif) | Pass |
+| Instructions paragraph | A short instruction paragraph is displayed | Load the page | The paragraph appears correctly | Pass |
+
+**Contact Page**
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Contact Form | The form is displayed correctly | Load the page | The form appears | Pass |
+| Required fields | Submitting a form with empty fields is disabled | Try to submit the form with empty fields | A "Please fill out this field" message appears | Pass |
+| Email required | Submitting a form with invalid email address is disabled | Try to submit the form with the email address missing the '@' symbol | A "Please include an '@' in the email address" message appears | Pass |
+| Submit form | Sends the email correctly | Click the Send button; see a SUCCESS message being logged onto the console | Email sends correctly | Pass |
+| Thank you message | A Thank You modal appears when the form is submitted | Submit the form | A Thank You message appears ![Thank you message](documentation/readme/features/thankyoumessage.gif) | Pass |
+
+**404 Page**
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| 404 Page | Custom 404 Page appears when a page cannot be found | Enter a wrong page address | The 404 Page appears | Pass |
+| 404 Text | The paragraph text is displayed properly | Load the 404 Page | The text appears correctly | Pass |
+| Go Back Home button | The button directs back to the Index page | Click the button | The Index page is loaded ![404](documentation/testing/user-testing/us13a.gif) | Pass |
+| Go Back Home button | The button text changes colour on hover | Hover on button | The colour changes | Pass |
+| Automatic redirection | The index page opens automatically after 10 seconds | Wait 10 seconds | The Index page is loaded ![404](documentation/testing/user-testing/us13b.gif)  | Pass |
+| Countdown | A countdown is displayed correctly | Load the 404 page | The countdown appears and works correctly | Pass |
 
 ## Bugs and fixes
 
