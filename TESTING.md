@@ -418,3 +418,11 @@ Contact Page:
 ### Feature testing results table
 
 ## Bugs and fixes
+
+During testing, I encountered a major bug. The end game modal containing the user's final score, time and a message was showing up as the question #22 was loaded, rather than after it was answered.
+
+![Snippet of the code before the bug was fixed](documentation/testing/bugbefore.png)
+
+This was fixed by rearranging the getNewCard() function. I moved the if statement checking for the progress to the beggining of the function. Now the function checks if the progress equals or is bigger than 22 first and displays the modal if this condition is met. The rest of the function is enclosed in the 'else' part of the if statement.
+
+![Snippet of the code after the bug was fixed](documentation/testing/bugafter.png)
